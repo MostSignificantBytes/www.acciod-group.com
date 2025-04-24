@@ -2,45 +2,17 @@
 templateKey: about-page
 language: fr
 slug: +about
-title: À propos de nous
+title: Qui sommes-nous ?
 ---
-### La société
+### Le Projet d'Entreprise
 
-Most Significant Bytes a été fondé en 2018 par Cédric Babeix et Lucien Sanchez.
+ACCIOD a été créée en 2007 pour proposer à ses clients une démarche unique d’optimisation des ressources informatiques de façon à les aligner sur les besoins des métiers de l’entreprise.
+Forte de ses expériences dans des projets complexes à fort enjeu tel que des projets de séparation de moyens et d’organisations informatiques, projets de transformations, optimisation des coûts d’infrastructures (Capex) et des coûts d’exploitation induits (Opex) projets d’externalisation sélective ou complète, ACCIOD démarre dès 2009 un ambitieux programme de R&D.
 
-Initialement spécialisés dans le Wi-Fi et la sécurité informatique, nous intervenons aujourd'hui dans des domaines tels que la téléphonie IP (ToIP), la virtualisation, le développement et les réseaux locaux filaires (LAN).
+L’objectif de ce programme :  inventer un outil intégré et automatisé, s’adaptant parfaitement à l’organisation de l’entreprise combinant des fonctionnalités capables de rendre parfaitement lisible la valorisation économique des technologies et d’apporter à l’entreprise une prédictibilité de ses dépenses de fonctionnement et d’investissements et d’en calculer leur valeur afin de les accorder strictement sur les enjeux de l’entreprise.
+ACCIOD a ainsi créé KP-One, première solution logicielle permettant sur un modèle de donnée unique la connexion des coûts technologiques à la valeur des services produits afin d’en mesurer l’impact sur les métiers de l’Entreprise, se positionnant ainsi sur le nouveau marché du Technology Business Management. 
+KP-One a été adoptée dès sa mise sur le marché par le Champion du Digital du CAC 40 et intègre aujourd’hui des périmètres budgétaires complexes dans des organisations internationales.
 
-De l'intégration à la maintenance et la supervision, nous sommes présents à chaque étape de la vie des systèmes que nous mettons en œuvre.
+KP-One est sélectionnée dans le Top 5 des solutions couvrant l’ensemble du spectre fonctionnel IT Financial et Business Management reconnues par Gartner dans son Market Guide.
 
-### Cédric Babeix
-
-Associé et co-fondateur de MSB, Cédric est principalement en charge du pôle cybersécurité et développement.
-
-Cédric a travaillé plusieurs années en tant qu'indépendant. Il a réalisé des applications de gestion pour de nombreux clients et des audits de sécurité réseau.
-Cette expertise transversale lui confère une vision complète des différents besoins des systèmes d'information.
-
-### Lucien Sanchez
-
-Associé et co-fondateur de MSB, Lucien est principalement en charge de la division Wi-Fi.
-
-Au cours de sa carrière, Lucien a travaillé plusieurs années pour un intégrateur de réseaux où il a réalisé de nombreuses prestations d'intégration et d'audit de réseaux Wi-Fi et filaires.
-Cette expérience lui a permis d'atteindre un haut niveau d'expertise dans ces domaines.
-
-### L'équipe
-
-Cédric et Lucien sont épaulés par une équipe de 6 personnes.
-Par ordre d'arrivée dans l'entreprise :
-
-Kelyan Marchal - Aprenti Ingénieur Réseaux et Télécommunications
-
-Maxime Lecorgne - Analyste d'Exploitation
-
-Kévin Dos Santos - Administrateur Réseaux
-
-Thomas Lieumont - Aprenti Technicien Réseaux
-
-Kévin Duguet - Architecte Systèmes
-
-Johan Gobaly - Technicien d'Assitance Informatique
-
-L’équipe MSB est jeune, dynamique et capable de s’adapter rapidement à toutes les situations. Nos clients actuels et passés pourront temoigner de leurs expériences à nos cotés.
+Notre équipe d’analystes vous assiste dans l’adoption de KP-One sur vos périmètres critiques.
