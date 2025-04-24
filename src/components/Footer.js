@@ -71,11 +71,6 @@ const Footer = class extends React.Component {
                                                 {this.filteredData.nav[4].title}
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link className="navbar-item" to={this.filteredData.nav[5].href}>
-                                                {this.filteredData.nav[5].title}
-                                            </Link>
-                                        </li>
                                     </ul>
                                 </section>
                             </div>
