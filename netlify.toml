@@ -1,0 +1,38 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "14.15.0"
+  YARN_VERSION = "1.22.4"
+  YARN_FLAGS = "--no-ignore-optional"
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+  exclude = [
+    './public/404.html',
+    './public/404/*',
+    './public/admin/*',
+    './public/offline-plugin-app-shell-fallback/*',
+    './public/reports/*',
+    # Only build sitemap for the default language to avoid duplicates
+    './public/fr/*'
+  ]
+[[plugins]]
+  package = "@netlify/plugin-a11y"
+  [plugins.inputs]
+  # Ignore all HTML files in `/admin`
+  ignoreDirectories = ['/admin', '/reports', '/offline-plugin-app-shell-fallback']
+  # Ignore any accessibility issues associated with an element matching this selector
+  ignoreElements = ['iframe[title="reCAPTCHA"]']
+  # Perform a11y check against WCAG 2.1 AAA
+  wcagLevel = 'WCAG2AAA'
+  # Do not fail the build if a11y issues are found
+  failWithIssues = false

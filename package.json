@@ -1,0 +1,56 @@
+{
+  "description": "Acciod website",
+  "version": "2.0.0",
+  "name": "www.acciod-grooup.com",
+  "author": "Cédric Babeix",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bulma": ">=0.9.4",
+    "gatsby": "<=4.25.5",
+    "gatsby-plugin-image": "^2.0.0",
+    "gatsby-plugin-manifest": "^4.14.0",
+    "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-netlify-cms": "^6.0.0",
+    "gatsby-plugin-offline": "^5.14.1",
+    "gatsby-plugin-purgecss": "^6.0.0",
+    "gatsby-plugin-react-helmet": "^5.0.0",
+    "gatsby-plugin-robots-txt": "<=1.6.14",
+    "gatsby-plugin-sass": "^5.0.0",
+    "gatsby-plugin-sharp": "^4.0.0",
+    "gatsby-remark-copy-linked-files": "^5.0.0",
+    "gatsby-remark-images": "^6.0.0",
+    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-source-filesystem": "^4.0.0",
+    "gatsby-transformer-remark": "^5.0.0",
+    "gatsby-transformer-sharp": "^4.0.0",
+    "lodash": "^4.17.21",
+    "lodash-webpack-plugin": "^0.11.6",
+    "netlify-cms-app": "^2.15.72",
+    "netlify-cms-media-library-cloudinary": "^1.3.10",
+    "netlify-cms-media-library-uploadcare": "^0.5.10",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-google-recaptcha-enterprise": "^1.0.3",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.59.2",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}
