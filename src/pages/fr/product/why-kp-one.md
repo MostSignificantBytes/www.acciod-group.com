@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-language: en
+language: fr
 slug: +product+why-kp-one
 title: Pourquoi choisir KP-One ?
 ---

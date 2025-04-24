@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-language: en
+language: fr
 slug: +product+standard-repository
 title: Un référentiel standard
 ---

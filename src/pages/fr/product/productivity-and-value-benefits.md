@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-language: en
+language: fr
 slug: +product+productivity-and-value-benefits
 title: Vos gains de productivité et de valeur
 ---

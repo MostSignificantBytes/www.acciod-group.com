@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-language: en
+language: fr
 slug: +product+data-model
 title: Un modèle de données unique
 ---
