@@ -5,7 +5,6 @@ slug: +about
 title: Acciod
 ---
 ### Connectez vos coûts technologiques à vos objectifs métiers
-	
 
 Key Performance One, grâce à son architecture inédite agrège et structure les données de bout en bout et en assure le cycle de vie
 
