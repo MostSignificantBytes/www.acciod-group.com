@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 language: fr
-slug: +product+features
+slug: +product+when-to-start
 title: Quand démarrer avec KP-One ?
 ---
 KP-One a été adopté par des entreprises ETI et CAC40 à la faveur d’éléments déclencheurs tels que :

@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 language: en
-slug: +product+features
+slug: +product+when-to-start
 title: When to start with KP-One?
 ---
 KP- One adoption by SMB and fortune 500 companies was triggered by following context change:
