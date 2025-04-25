@@ -73,6 +73,9 @@ const Navbar = class extends React.Component {
                             {this.navData.map(item => (
                                 <Link className={`navbar-item${this.slug === item.href ? ' is-active' : ''}`} key={item.title} to={item.href}>
                                     {item.title}
+                                    {item.subNav.map(subItem => (
+                                        {subItem.title}
+                                    ))}
                                 </Link>
                             ))}
                         </div>
