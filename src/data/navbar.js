@@ -32,7 +32,7 @@ module.exports = [
                 { href: '/solution/tco', title: 'Le coût de détention ou TCO' },
                 { href: '/solution/how-kp-one-helps-you', title: 'Comment KP-One vous aide' },
             ] },
-            { href: '/product/', title: 'Product', subNav: [
+            { href: '/product/', title: 'Produit', subNav: [
                 { href: '/product/data-model', title: 'Un modèle de données unique' },
                 { href: '/product/standard-repository', title: 'Un référentiel standard' },
                 { href: '/product/why-kp-one', title: 'Pourquoi choisir KP-One ?' },
