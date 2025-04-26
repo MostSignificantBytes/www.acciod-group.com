@@ -49,16 +49,16 @@ const TemplateWrapper = ({ children }) => {
 
     }
 
-    var canonicalURL = "https://www.msbytes.com" +  slug;
+    var canonicalURL = "https://www.acciod-group.com" +  slug;
     var alternateURLEN;
     var alternateURLFR;
 
     if (language === 'fr') {
-        alternateURLEN = "https://www.msbytes.com/en" +  slug;
-        alternateURLFR = "https://www.msbytes.com" +  slug;
+        alternateURLEN = "https://www.acciod-group.com/en" +  slug;
+        alternateURLFR = "https://www.acciod-group.com" +  slug;
     } else {
-        alternateURLEN = "https://www.msbytes.com/en" +  slug.replace("/" + language, "");
-        alternateURLFR = "https://www.msbytes.com" +  slug.replace("/" + language, "");
+        alternateURLEN = "https://www.acciod-group.com/en" +  slug.replace("/" + language, "");
+        alternateURLFR = "https://www.acciod-group.com" +  slug.replace("/" + language, "");
     }
 
     return (
