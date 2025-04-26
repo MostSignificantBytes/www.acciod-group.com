@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: "MSB",
-        description: "Most Significant Bytes - Network Neat Work",
+        title: "ACCIOD Group",
+        description: "La solution KP-One",
     },
     plugins: [
         "gatsby-plugin-react-helmet",
