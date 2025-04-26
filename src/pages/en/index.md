@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 language: en
-slug: +about
+slug: +
 title: Acciod
 ---
 ### Connect your technology cost to your business objectives

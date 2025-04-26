@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 language: en
-slug: +about
+slug: +
 title: Acciod
 ---
 ### Connectez vos coûts technologiques à vos objectifs métiers
