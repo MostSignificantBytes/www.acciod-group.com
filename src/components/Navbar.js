@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logoKP-One.png";
 
 import staticData from '../data/navbar'
 import LanguageSwitcher from './LanguageSwitcher'
+
+import logoAcciod from "../img/logoAcciod.png";
+import logoKpOne from "../img/logoKpOne.png";
+import twitter from "../img/social/twitter.svg";
+import linkedin from "../img/social/linkedin.svg";
 
 const _ = require('lodash')
 
@@ -42,6 +46,41 @@ const Navbar = class extends React.Component {
 
     render() {
         return (
+            <>
+            <nav
+                className="navbar has-background-black"
+                role="navigation"
+                aria-label="secondary-navigation"
+            >
+                <div className="container">
+                    <div className="navbar-brand">
+                        <Link to={this.filteredData.path} className="navbar-item" title={this.filteredData.logoAcciod}>
+                            <img width="776px" height="280px" src={logoAcciod} alt={this.filteredData.logoAcciod} style={{ width: "auto" }} />
+                        </Link>
+                    </div>
+                    <div className="navbar-end has-text-centered">
+                        <div className="navbar-item">
+                            <a title="twitter" href="https://twitter.com/msbcompany">
+                                <img
+                                    src={twitter}
+                                    alt="Twitter"
+                                    style={{ width: "1em", height: "1em" }}
+                                />
+                            </a>
+                        </div>
+                        <div className="navbar-item">
+                            <a title="linkedin" href="https://fr.linkedin.com/company/msbytes">
+                                <img
+                                    src={linkedin}
+                                    alt="Linkedin"
+                                    style={{ width: "1em", height: "1em" }}
+                                />
+                            </a>
+                        </div>
+                        <LanguageSwitcher slug={this.slug} />
+                    </div>
+                </div>
+            </nav>
             <nav
                 className="navbar is-transparent"
                 role="navigation"
@@ -49,8 +88,8 @@ const Navbar = class extends React.Component {
             >
                 <div className="container">
                     <div className="navbar-brand">
-                        <Link to={this.filteredData.path} className="navbar-item" title={this.filteredData.logo}>
-                            <img width="776px" height="280px" src={logo} alt={this.filteredData.logo} style={{ width: "auto" }} />
+                        <Link to={this.filteredData.path} className="navbar-item" title={this.filteredData.logoKpOne}>
+                            <img width="776px" height="280px" src={logoKpOne} alt={this.filteredData.logoKpOne} style={{ width: "auto" }} />
                         </Link>
                         {/* Hamburger menu */}
                         <div
@@ -68,7 +107,7 @@ const Navbar = class extends React.Component {
                         </div>
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
-                        <div className="navbar-start has-text-centered">
+                        <div className="navbar-end has-text-centered">
                             {this.navData.map(item => (
                                 item.subNav && item.subNav.length > 0 ? (
                                     <div className="navbar-item has-dropdown is-hoverable">
@@ -90,12 +129,10 @@ const Navbar = class extends React.Component {
                                 )
                             ))}
                         </div>
-                        <div className="navbar-end has-text-centered">
-                            <LanguageSwitcher slug={this.slug} />
-                        </div>
                     </div>
                 </div>
             </nav>
+            </>
         );
     }
 };
