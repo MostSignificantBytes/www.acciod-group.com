@@ -4,27 +4,27 @@ language: en
 slug: +
 title: Acciod
 slider1:
-    title: Connect your technology cost to your business objectives
-    elements:
-      - image: none
-        text: Key Performance One, thanks to its unprecedented architecture, ensures an end-to-end data aggregation and structuration as well as its lifecycle
-      - image: none
-        text: Key Performance One adapts to enterprise and government organizations by identifying IT services producers and consumers
-      - image: none
-        text: Key Performance One is the only SaaS solution allowing organizations to share the same IT financial metrics for Total Cost of Ownership and Total Value of Ownership (TCO-TVO)
-      - image: none
-        text: Key Performance One is the first software solution able to bring together, plan and connect digital expenses and investments
-      - image: none
-        text: Key Performance One ranks in Gartner « IT Financial & Business Management » ITFM-ITBM Market Guide Top 5 solutions
-      - image: none
-        text: Key Performance One is the only solution based on a fully integrated IT business algorithm relying on a unique data model
-    button: Our solution
+  title: Connect your technology cost to your business objectives
+  elements:
+    - image: none
+      text: Key Performance One, thanks to its unprecedented architecture, ensures an end-to-end data aggregation and structuration as well as its lifecycle
+    - image: none
+      text: Key Performance One adapts to enterprise and government organizations by identifying IT services producers and consumers
+    - image: none
+      text: Key Performance One is the only SaaS solution allowing organizations to share the same IT financial metrics for Total Cost of Ownership and Total Value of Ownership (TCO-TVO)
+    - image: none
+      text: Key Performance One is the first software solution able to bring together, plan and connect digital expenses and investments
+    - image: none
+      text: Key Performance One ranks in Gartner « IT Financial & Business Management » ITFM-ITBM Market Guide Top 5 solutions
+    - image: none
+      text: Key Performance One is the only solution based on a fully integrated IT business algorithm relying on a unique data model
+  button: Our solution
 paragraph1:
-	  title: IT Governance Solution
-	  text: Are you today in a position to identify what proportion of digital/technology expense is included in your products and/or services and what it will be tomorrow to achieve business goals?
+	title: IT Governance Solution
+	text: Are you today in a position to identify what proportion of digital/technology expense is included in your products and/or services and what it will be tomorrow to achieve business goals?
 paragraph2:
-	  title: Turn your technology data into **business indicators**
-	  text: KP-One allows you to reduce, in a sustainable manner, your digital cost to its real usage ratio and to align your technology investments with business strategic needs.
+  title: Turn your technology data into **business indicators**
+  text: KP-One allows you to reduce, in a sustainable manner, your digital cost to its real usage ratio and to align your technology investments with business strategic needs.
 slider2:
     elements:
       - image: none

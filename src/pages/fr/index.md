@@ -4,27 +4,27 @@ language: fr
 slug: +
 title: Acciod
 slider1:
-    title: Connectez vos coûts technologiques à vos objectifs métiers
-    elements:
-      - image: none
-        text: Key Performance One, grâce à son architecture inédite agrège et structure les données de bout en bout et en assure le cycle de vie
-      - image: none
-        text: Key Performance One s'adapte à l'organisation des Entreprises et des Administrations en identifiant qui sont les producteurs de services informatiques et qui en sont les consommateurs
-      - image: none
-        text: Key Performance One est la seule solution logicielle sur le Cloud (SaaS) qui permet aux organisations de partager les mêmes métriques budgétaires IT de détention et de valeur (TCO-TVO)
-      - image: none
-        text: Key Performance One est la première solution logicielle métier qui permet de rapprocher, planifier et connecter les dépenses et les investissements du numérique
-      - image: none
-        text: Key Performance One est référencée dans le Top 5 du Market Guide Gartner parmi les solutions « IT Financial & Business Management » ITFM-ITBM
-      - image: none
-        text: Key Performance One est la seule solution reposant sur un algorithme métier des Technologies de l'Information (IT) totalement intégré et s'appuyant sur un modèle de données unique
-    button: Notre solution
+  title: Connectez vos coûts technologiques à vos objectifs métiers
+  elements:
+    - image: none
+      text: Key Performance One, grâce à son architecture inédite agrège et structure les données de bout en bout et en assure le cycle de vie
+    - image: none
+      text: Key Performance One s'adapte à l'organisation des Entreprises et des Administrations en identifiant qui sont les producteurs de services informatiques et qui en sont les consommateurs
+    - image: none
+      text: Key Performance One est la seule solution logicielle sur le Cloud (SaaS) qui permet aux organisations de partager les mêmes métriques budgétaires IT de détention et de valeur (TCO-TVO)
+    - image: none
+      text: Key Performance One est la première solution logicielle métier qui permet de rapprocher, planifier et connecter les dépenses et les investissements du numérique
+    - image: none
+      text: Key Performance One est référencée dans le Top 5 du Market Guide Gartner parmi les solutions « IT Financial & Business Management » ITFM-ITBM
+    - image: none
+      text: Key Performance One est la seule solution reposant sur un algorithme métier des Technologies de l'Information (IT) totalement intégré et s'appuyant sur un modèle de données unique
+  button: Notre solution
 paragraph1:
-	  title: Solution de gouvernance IT
-	  text: Savez-vous déterminer aujourd’hui quelle part de dépense digitale/technologique contient vos produits et/ou services et quelle part devrez-vous demain y consacrer pour atteindre vos objectifs de croissance ?
+	title: Solution de gouvernance IT
+	text: Savez-vous déterminer aujourd’hui quelle part de dépense digitale/technologique contient vos produits et/ou services et quelle part devrez-vous demain y consacrer pour atteindre vos objectifs de croissance ?
 paragraph2:
-	  title: Transformez vos données technologiques en **indicateurs métier**
-	  text: KP-One vous permet de réduire durablement vos coûts digitaux à leur réel taux d’usage et d’aligner vos investissements technologiques sur les besoins stratégiques de vos métiers.
+	title: Transformez vos données technologiques en **indicateurs métier**
+	text: KP-One vous permet de réduire durablement vos coûts digitaux à leur réel taux d’usage et d’aligner vos investissements technologiques sur les besoins stratégiques de vos métiers.
 slider2:
     elements:
       - image: none
