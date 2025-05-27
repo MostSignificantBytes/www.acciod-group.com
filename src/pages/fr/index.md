@@ -75,7 +75,7 @@ blurb1:
           text1: Avec KP-One, vous contrôlez votre portefeuille d’investissements digitaux et mesurez les gains de vos projets (benefit tracking) et l’impact de leur productivité sur vos budgets de fonctionnement.
           text2: KP-One calcule pour vous le business case des projets de transformation digitale en comparant les coûts complets de fonctionnement initiaux et cibles. Vous anticipez ainsi l’obsolescence technologique et les surcoûts.
         - image: none
-          title: *links*
+          title: <\links>
           text1: Comment
           button1: KP-One vous aide ?
           text2: Quelles sont

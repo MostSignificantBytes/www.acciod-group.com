@@ -75,7 +75,7 @@ blurb1:
           text1: With KP-One, you monitor your digital investment portfolio and project benefit tracking along with their impact on recurring maintenance operations.
           text2: KP-One computes your digital transformation project business case for you by comparing initial and target total cost of operation. You can anticipate on technology obsolescence and related additional costs.
         - image: none
-          title: *links*
+          title: <\links>
           text1: How
           button1: KP-One can help you?
           text2: What are
