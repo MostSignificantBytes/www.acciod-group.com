@@ -52,6 +52,101 @@ export const IndexPageTemplate = ({
                                         </div>
                                     </div>
 
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph2.title}
+                                            </h3>
+                                            <p>{paragraph2.text}</p>
+                                        </div>
+                                    </div>
+
+                                    <SimpleSlider />
+
+                                    <div className="columns">
+                                        <div className="column is-12 has-text-centered">
+                                            <Link className="btn" to={(language === 'fr' ? '' : '/' + language) + "/product/why-kp-one/"}>
+                                                {paragraph3.button}
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph4.title}
+                                            </h3>
+                                            <h4 className="has-text-weight-semibold is-size-2">
+                                                {paragraph4.subtitle}
+                                            </h4>
+                                            <p>{paragraph4.text}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph5.title}
+                                            </h3>
+                                            <p>{paragraph5.text1}</p>
+                                            <p>{paragraph5.text2}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12 has-text-centered">
+                                            <Link className="btn" to={(language === 'fr' ? '' : '/' + language) + "/contact/"}>
+                                                {paragraph6.button}
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph7.title}
+                                            </h3>
+                                            <p>{paragraph7.text}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph8.title}
+                                            </h3>
+                                            <p>{paragraph8.text1}</p>
+                                            <p>{paragraph8.text2}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <p>{paragraph9.text}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph10.title}
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <h3 className="has-text-weight-semibold is-size-2">
+                                                {paragraph11.title}
+                                            </h3>
+                                            <p>{paragraph11.text1}</p>
+                                            <p>{paragraph11.text2}</p>
+                                            <Link className="btn" to={(language === 'fr' ? '' : '/' + language) + "/solution/itfm/"}>
+                                                {paragraph11.button}
+                                            </Link>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
