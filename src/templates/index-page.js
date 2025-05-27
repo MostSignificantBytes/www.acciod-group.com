@@ -13,65 +13,45 @@ import SimpleSlider from "../components/SimpleSlider";
 export const IndexPageTemplate = ({
     language,
     slug,
-    image,
     title,
-    heading,
-    subheading,
-    mainpitch,
-    description,
-    intro,
-    seeAllActivities,
-    latestStories,
-    keepReading,
-    ourBlog,
+    slider1,
+    paragraph1,
+    paragraph2,
+    slider2,
+    paragraph3,
+    blurb1,
+    paragraph4,
+    paragraph5,
+    blurb2,
+    paragraph6,
+    paragraph7,
+    paragraph8,
+    paragraph9,
+    paragraph10,
+    video,
+    blurb3,
+    paragraph11,
 }) => {
-    const heroImage = getImage(image) || image;
-
     return (
         <div>
-            <SimpleSlider />
-            <FullWidthImage img={heroImage} title={title} subheading={heading} />
             <section className="section section--gradient">
                 <div className="container">
                     <div className="section">
                         <div className="columns">
                             <div className="column is-10 is-offset-1">
                                 <div className="content">
-                                    <div className="content">
-                                        <div className="tile">
-                                            <h1 className="title">{mainpitch.title}</h1>
-                                        </div>
-                                        <div className="tile">
-                                            <h2 className="subtitle">{mainpitch.description}</h2>
-                                        </div>
-                                    </div>
+
+                                    <SimpleSlider />
+
                                     <div className="columns">
                                         <div className="column is-12">
                                             <h3 className="has-text-weight-semibold is-size-2">
-                                                {intro.heading}
+                                                {paragraph1.title}
                                             </h3>
-                                            <p>{intro.description}</p>
+                                            <p>{paragraph1.text}</p>
                                         </div>
                                     </div>
-                                    <Features gridItems={intro.blurbs} />
-                                    <div className="columns">
-                                        <div className="column is-12 has-text-centered">
-                                            <Link className="btn" to={(language === 'fr' ? '' : '/' + language) + "/activities/"}>
-                                                {seeAllActivities}
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <div className="column is-12">
-                                        <h3 className="has-text-weight-semibold is-size-2">
-                                            {latestStories}
-                                        </h3>
-                                        <BlogRoll language={language} keepReading={keepReading}/>
-                                        <div className="column is-12 has-text-centered">
-                                            <Link className="btn" to={(language === 'fr' ? '' : '/' + language) + "/blog/"}>
-                                                {ourBlog}
-                                            </Link>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -85,18 +65,24 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
     language: PropTypes.string,
     slug: PropTypes.string,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
-    heading: PropTypes.string,
-    mainpitch: PropTypes.object,
-    description: PropTypes.string,
-    intro: PropTypes.shape({
-        blurbs: PropTypes.array,
-    }),
-    seeAllActivities: PropTypes.string,
-    latestStories: PropTypes.string,
-    keepReading: PropTypes.string,
-    ourBlog: PropTypes.string,
+    slider1: PropTypes.object,
+    paragraph1: PropTypes.object,
+    paragraph2: PropTypes.object,
+    slider2: PropTypes.object,
+    paragraph3: PropTypes.object,
+    blurb1: PropTypes.array,
+    paragraph4: PropTypes.object,
+    paragraph5: PropTypes.object,
+    blurb2: PropTypes.array,
+    paragraph6: PropTypes.object,
+    paragraph7: PropTypes.object,
+    paragraph8: PropTypes.object,
+    paragraph9: PropTypes.object,
+    paragraph10: PropTypes.object,
+    video: PropTypes.object,
+    blurb3: PropTypes.array,
+    paragraph11: PropTypes.object,
 };
 
 const IndexPage = ({ data }) => {
@@ -107,16 +93,24 @@ const IndexPage = ({ data }) => {
             <IndexPageTemplate
                 language={frontmatter.language}
                 slug={frontmatter.slug}
-                image={frontmatter.image}
                 title={frontmatter.title}
-                heading={frontmatter.heading}
-                mainpitch={frontmatter.mainpitch}
-                description={frontmatter.description}
-                intro={frontmatter.intro}
-                seeAllActivities={frontmatter.seeAllActivities}
-                latestStories={frontmatter.latestStories}
-                keepReading={frontmatter.keepReading}
-                ourBlog={frontmatter.ourBlog}
+                slider1={frontmatter.slider1}
+                paragraph1={frontmatter.paragraph1}
+                paragraph2={frontmatter.paragraph2}
+                slider2={frontmatter.slider2}
+                paragraph3={frontmatter.paragraph3}
+                blurb1={frontmatter.blurb1}
+                paragraph4={frontmatter.paragraph4}
+                paragraph5={frontmatter.paragraph5}
+                blurb2={frontmatter.blurb2}
+                paragraph6={frontmatter.paragraph6}
+                paragraph7={frontmatter.paragraph7}
+                paragraph8={frontmatter.paragraph8}
+                paragraph9={frontmatter.paragraph9}
+                paragraph10={frontmatter.paragraph10}
+                video={frontmatter.video}
+                blurb3={frontmatter.blurb3}
+                paragraph11={frontmatter.paragraph11}
             />
         </Layout>
     );
@@ -145,32 +139,94 @@ export const pageQuery = graphql`
                 language
                 slug
                 title
-                image {
-                    childImageSharp {
-                        gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-                    }
-                }
-                heading
-                mainpitch {
+
+                slider1 {
                     title
-                    description
+                    elements {
+                        image
+                        text
+                    }
+                    button
                 }
-                intro {
-                    heading
-                    description
-                    blurbs {
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-                            }
-                        }
+                paragraph1 {
+                    title
+                    text
+                }
+                paragraph2 {
+                    title
+                    text
+                }
+                slider2 {
+                    elements {
+                        image
                         text
                     }
                 }
-                seeAllActivities
-                latestStories
-                keepReading
-                ourBlog
+                paragraph3 {
+                    button
+                }
+                blurb1 {
+                    title
+                    elements {
+                        image
+                        title
+                        text1
+                        text2
+                    }
+                }
+                paragraph4 {
+                    title
+                    subtitle
+                    text
+                }
+                paragraph5 {
+                    title
+                    text1
+                    text2
+                }
+                blurb2 {
+                    elements {
+                        title
+                        text
+                    }
+                }
+                paragraph6 {
+                    button
+                }
+                paragraph7 {
+                    title
+                    text
+                }
+                paragraph8 {
+                    title
+                    text1
+                    text2
+                }
+                paragraph9 {
+                    text
+                }
+                paragraph10 {
+                    title
+                }
+                video {
+                    url
+                }
+                blurb3 {
+                    title1
+                    title2
+                    title3
+                    title4
+                    elements {
+                        image
+                        title
+                    } 
+                }
+                paragraph11 {
+                    title
+                    text1
+                    text2
+                    button
+                }
             }
         }
     }
