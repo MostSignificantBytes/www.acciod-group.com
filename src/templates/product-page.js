@@ -15,7 +15,6 @@ export const ProductPageTemplate = ({
     slug,
     image,
     title,
-    heading,
     description,
     intro,
     main,
@@ -112,7 +111,6 @@ ProductPageTemplate.propTypes = {
     slug: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
-    heading: PropTypes.string,
     description: PropTypes.string,
     intro: PropTypes.shape({
         blurbs: PropTypes.array,
@@ -144,7 +142,6 @@ const ProductPage = ({ data }) => {
                 slug={frontmatter.slug}
                 image={frontmatter.image}
                 title={frontmatter.title}
-                heading={frontmatter.heading}
                 description={frontmatter.description}
                 intro={frontmatter.intro}
                 main={frontmatter.main}
@@ -184,7 +181,6 @@ export const productPageQuery = graphql`
                         gatsbyImageData(quality: 100, layout: FULL_WIDTH)
                     }
                 }
-                heading
                 description
                 intro {
                     blurbs {
