@@ -92,15 +92,15 @@ paragraph5:
   text2: KP-One restitue des indicateurs multivues pour que plus rien ne vous échappe <\colon>
 blurb2:
   elements:
-    - title: 1
+    - title: '1'
       text: <bold>KP-One enregistre le prix d’acquisition<\bold>, les montants unitaires actualisés et le coût total (IaaS, PaaS, SaaS) et permet la parfaite lisibilité des factures compliquées du Cloud.
-    - title: 2
+    - title: '2'
       text: <bold>KP-One restitue l’historique des coûts unitaires<\bold>, de vos volumes et des coûts totaux de détention (TCO). KP-One vous indique l’évolution des unités d’œuvre et l’évolution de vos volumes.
-    - title: 3
+    - title: '3'
       text: <bold>KP-One restitue le coût complet du service Cloud<\bold> et vous indique son évolution pour obtenir le cout total de la valeur (TVO).
-    - title: 4
+    - title: '4'
       text: <bold>KP-One indique les KPI du marché<\bold> pour vous permettre de comparer le taux d’usage le plus approprié du Cloud (IaaS, PaaS…) par rapport au meilleur prix du moment.
-    - title: 5
+    - title: '5'
       text: <bold>Vous pouvez comparer dans KP-One un scénario interne<\bold> avec celui de l’adoption du Cloud en spécifiant vos volumes et calculer le ROI de chaque transformation. Vous saurez si la flexibilité d’un Cloud a un coût pertinent dans votre contexte.
     - title: KP-One vous permet de décider entre des scénarios « Make or Buy ».
       text: Dans KP-One cet exercice n’est pas propre aux Services Cloud. Vous pouvez vous y livrer pour <bold>n'importe quel service interne et/ou externe.<\bold>

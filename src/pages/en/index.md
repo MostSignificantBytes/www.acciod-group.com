@@ -92,15 +92,15 @@ paragraph5:
   text2: KP-One computes multi-axis KPIs, so you do not miss a thing<\colon>
 blurb2:
   elements:
-    - title: 1
+    - title: '1'
       text: <bold>KP-One records acquisition price<\bold>, work units' cost and computes total cost (IaaS, PaaS, SaaS) allowing to analyze and understand overwhelming Cloud services invoices.
-    - title: 2
+    - title: '2'
       text: <bold>KP-One logs work units' cost<\bold>, volumes and Total Cost of Ownership (TCO) overtime. KP-One records work units, and volumes variations.
-    - title: 3
+    - title: '3'
       text: <bold>KP-One computes Cloud service total cost<\bold> and records variance to compute Total Value of Ownership (TVO).
-    - title: 4
+    - title: '4'
       text: <bold>KP-One records market KPIs<\bold> to allow you to compare with Cloud most appropriate usage rate according to instant best price.
-    - title: 5
+    - title: '5'
       text: <bold>With KP-One, you can compare an internal scenario<\bold> with a Cloud adoption scenario designed with your specific volumes. This comparison allows you to compute transformation project ROI and to tell if Cloud flexibility has a relevant cost in your context.
     - title: KP-One allows you to choose between « Make or Buy » scenarios.
       text: With KP-One, this analysis is not limited to Cloud services and can be extended <bold>to any internal/ external service.<\bold>
