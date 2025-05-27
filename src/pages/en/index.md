@@ -125,19 +125,19 @@ blurb3:
   title3: Cost allocation
   title4: Detailed analysis
   elements:
-    - image: none:
+    - image: none
       title: Optimization, cost capture and cost structure
-    - image: none:
+    - image: none
       title: Benchmark
-    - image: none:
+    - image: none
       title: Budget and forecast
-    - image: none:
+    - image: none
       title: Performance metrics
-    - image: none:
+    - image: none
       title: Services pricing model
-    - image: none:
+    - image: none
       title: Reporting and dashboard
-    - image: none:
+    - image: none
       title: Project financial management
 paragraph11:
   title: KP-One standard repository stands for the single data source for the collaborative analysis platform which turns your technical and financial data into business KPIs.

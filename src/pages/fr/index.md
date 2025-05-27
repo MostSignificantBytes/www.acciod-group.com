@@ -126,19 +126,19 @@ blurb3:
   title3: Répartition des coûts
   title4: Analyse détaillée
   elements:
-    - image: none:
+    - image: none
       title: Optimisation capture et structure des coûts
-    - image: none:
+    - image: none
       title: Benchmarking
-    - image: none:
+    - image: none
       title: Budget et prévisions
-    - image: none:
+    - image: none
       title: Métriques de performance
-    - image: none:
+    - image: none
       title: Modèle de tarification des services
-    - image: none:
+    - image: none
       title: Reporting et tableaux de bord
-    - image: none:
+    - image: none
       title: Gestion financière des projets
 paragraph11:
   title: Le référentiel standard de KP-One devient la source de données unique de la plateforme d’analyse collaborative qui transforme vos données technico-économiques en indicateurs métier.
