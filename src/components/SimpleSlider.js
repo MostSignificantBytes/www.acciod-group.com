@@ -12,22 +12,22 @@ export default function SimpleSlider() {
     return (
         <Slider {...settings}>
             <div>
-                <h3>1</h3>
+                <h3>Slider page 1</h3>
             </div>
             <div>
-                <h3>2</h3>
+                <h3>Slider page 2</h3>
             </div>
             <div>
-                <h3>3</h3>
+                <h3>Slider page 3</h3>
             </div>
             <div>
-                <h3>4</h3>
+                <h3>Slider page 4</h3>
             </div>
             <div>
-                <h3>5</h3>
+                <h3>Slider page 5</h3>
             </div>
             <div>
-                <h3>6</h3>
+                <h3>Slider page 6</h3>
             </div>
         </Slider>
     );
