@@ -20,8 +20,8 @@ slider1:
       text: Key Performance One is the only solution based on a fully integrated IT business algorithm relying on a unique data model
   button: Our solution
 paragraph1:
-	title: IT Governance Solution
-	text: Are you today in a position to identify what proportion of digital/technology expense is included in your products and/or services and what it will be tomorrow to achieve business goals?
+  title: IT Governance Solution
+  text: Are you today in a position to identify what proportion of digital/technology expense is included in your products and/or services and what it will be tomorrow to achieve business goals?
 paragraph2:
   title: Turn your technology data into **business indicators**
   text: KP-One allows you to reduce, in a sustainable manner, your digital cost to its real usage ratio and to align your technology investments with business strategic needs.

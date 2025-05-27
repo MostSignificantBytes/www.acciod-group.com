@@ -20,11 +20,11 @@ slider1:
       text: Key Performance One est la seule solution reposant sur un algorithme métier des Technologies de l'Information (IT) totalement intégré et s'appuyant sur un modèle de données unique
   button: Notre solution
 paragraph1:
-	title: Solution de gouvernance IT
-	text: Savez-vous déterminer aujourd’hui quelle part de dépense digitale/technologique contient vos produits et/ou services et quelle part devrez-vous demain y consacrer pour atteindre vos objectifs de croissance ?
+  title: Solution de gouvernance IT
+  text: Savez-vous déterminer aujourd’hui quelle part de dépense digitale/technologique contient vos produits et/ou services et quelle part devrez-vous demain y consacrer pour atteindre vos objectifs de croissance ?
 paragraph2:
-	title: Transformez vos données technologiques en **indicateurs métier**
-	text: KP-One vous permet de réduire durablement vos coûts digitaux à leur réel taux d’usage et d’aligner vos investissements technologiques sur les besoins stratégiques de vos métiers.
+  title: Transformez vos données technologiques en **indicateurs métier**
+  text: KP-One vous permet de réduire durablement vos coûts digitaux à leur réel taux d’usage et d’aligner vos investissements technologiques sur les besoins stratégiques de vos métiers.
 slider2:
     elements:
       - image: none
