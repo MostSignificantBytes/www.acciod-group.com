@@ -5,9 +5,6 @@ import { getImage } from "gatsby-plugin-image";
 import parse from 'html-react-parser';
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
 import SimpleSlider from "../components/SimpleSlider";
 
 // eslint-disable-next-line

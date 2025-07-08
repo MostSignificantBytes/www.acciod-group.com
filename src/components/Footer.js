@@ -4,13 +4,7 @@ import { Link } from "gatsby";
 import staticData from '../data/navbar'
 
 import logoAcciod from "../img/logoAcciod.png";
-import logoKpOne from "../img/logoKpOne.png";
 import logoKpOneFooter from "../img/logoKpOneFooter.png";
-import linkedin from "../img/social/linkedin.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
-import github from "../img/social/github.svg";
 
 const Footer = class extends React.Component {
     constructor(props) {

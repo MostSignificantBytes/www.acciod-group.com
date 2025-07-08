@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import nav from '../data/navbar'
 
 import planet from "../img/planet.svg";
 
