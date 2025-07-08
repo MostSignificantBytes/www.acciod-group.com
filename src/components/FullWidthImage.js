@@ -4,10 +4,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function FullWidthImage(props) {
     const {
+        type,
         height = 400,
         img,
         title,
         subheading,
+        text,
         imgPosition = "top left",
     } = props;
 
@@ -55,7 +57,37 @@ export default function FullWidthImage(props) {
                         formats={["auto", "webp", "avif"]}
                     />
                 )}
-                {(title || subheading) && (
+                {(type == "index1") && (
+                    <div
+                        style={{
+                            gridArea: "1/1",
+                            position: "relative",
+                            placeItems: "center",
+                            display: "grid",
+                            alignItems: "center",
+                        }}
+                    >
+                        <div
+                            style={{
+                                backgroundColor: "white",
+                                color: "black",
+                                textAlign: "center",
+                                width: "50%",
+                            }}
+                        >
+                            <h3 className="is-size-5">
+                                {title}
+                            </h3>
+                            <h4 className="has-text-weight-bold is-size-4">
+                                {subheading}
+                            </h4>
+                            <p>
+                                {text}
+                            </p>
+                        </div>
+                    </div>
+                )}
+                {((title || subheading) && false) && (
                     <div
                         style={{
                             // By using the same grid area for both, they are stacked on top of each other
@@ -106,8 +138,10 @@ export default function FullWidthImage(props) {
 }
 
 FullWidthImage.propTypes = {
+    type: PropTypes.string,
     img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
     height: PropTypes.number,
     subheading: PropTypes.string,
+    text: PropTypes.string,
 };

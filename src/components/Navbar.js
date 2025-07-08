@@ -59,21 +59,21 @@ const Navbar = class extends React.Component {
                         </Link>
                     </div>
                     <div className="navbar-end has-text-centered">
-                        <div className="navbar-item">
-                            <a title="twitter" href="https://twitter.com/msbcompany">
+                        <div className="navbar-item" style={{ padding: "0.3rem 0.2rem 0rem"}}>
+                            <a title="twitter" href="https://twitter.com/ACCIOD_">
                                 <img
                                     src={twitter}
                                     alt="Twitter"
-                                    style={{ width: "1em", height: "1em" }}
+                                    style={{ width: "1.5em", height: "1.5em" }}
                                 />
                             </a>
                         </div>
-                        <div className="navbar-item">
-                            <a title="linkedin" href="https://fr.linkedin.com/company/msbytes">
+                        <div className="navbar-item" style={{ padding: "0.3rem 0.2rem 0rem"}}>
+                            <a title="linkedin" href="https://www.linkedin.com/company/1793406?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1433769600112%2Ctas%3Aacciod">
                                 <img
                                     src={linkedin}
                                     alt="Linkedin"
-                                    style={{ width: "1em", height: "1em" }}
+                                    style={{ width: "1.75em", height: "1.75em" }}
                                 />
                             </a>
                         </div>
@@ -111,9 +111,7 @@ const Navbar = class extends React.Component {
                             {this.navData.map(item => (
                                 item.subNav && item.subNav.length > 0 ? (
                                     <div className="navbar-item has-dropdown is-hoverable">
-                                        <Link className={`navbar-link${this.slug === item.href ? ' is-active' : ''}`} key={item.title} to={item.href}>
-                                            {item.title}
-                                        </Link>
+                                        <div className="navbar-item">{item.title}</div>
                                         <div className="navbar-dropdown">
                                             {item.subNav.map(subItem => (
                                                 <Link className={`navbar-item${this.slug === subItem.href ? ' is-active' : ''}`} key={subItem.title} to={subItem.href}>
@@ -123,7 +121,7 @@ const Navbar = class extends React.Component {
                                         </div>
                                     </div>
                                 ) : (
-                                    <Link className={`navbar-item${this.slug === item.href ? ' is-active' : ''}`} key={item.title} to={item.href}>
+                                    <Link className={`navbar-item${this.slug === item.href ? ' is-active' : ''}${item.href.startsWith('tel') ? ' button' : ''}`} key={item.title} to={item.href}>
                                         {item.title}
                                     </Link>
                                 )

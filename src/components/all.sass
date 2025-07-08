@@ -1,18 +1,68 @@
-@import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
 
 // Config vars
-$msb-blue: #003399
-$msb-blue-invert: #FFCC00
+$acciod-blue: #079FE1
+$acciod-blue-invert: #FFCC00
 
-$primary: $msb-blue
-$primary-invert: $msb-blue-invert
+$primary: $acciod-blue
+$primary-invert: $acciod-blue-invert
 $body-color: #53565A
-$black: #101820
+$black: #000000
+$white: #FFFFFF
 
-.navbar .navbar-menu
-    box-shadow: none !important
+$family-primary: "Titillium Web", sans-serif
+
+@import "~bulma"
+@import "~bulma/sass/utilities/initial-variables"
+
+*
+    font-family: "Titillium Web", sans-serif
+
+.navbar
+    //box-shadow: 0 0.1em 0 0 !important
+
+// Acciod small navbar
+$navbar-height: 5.5
+
+.navbar-item.is-active
+    background-color: $white !important
+    font-weight: normal !important
+
+.navbar .navbar-brand img
+    max-height: 4rem
+
+.navbar .navbar-item:hover
+    color: $acciod-blue !important
+
+.navbar .button
+    background-color: $primary
+    color: $white
+    border-radius: 0
+    border-color: $primary
+    margin: 1.5rem
+    font-weight: normal
+
+.navbar .button:hoover
+    background-color: $primary
+    color: $white
+    border-radius: 0
+    border-color: $primary
+    margin: 1.5rem
+
+
+
+
+
+.navbar:first-child .navbar-item
+    color: $white !important
+
+.navbar:first-child .navbar-item:hover
+    background-color: $black
+    color: $white !important
+    
 
 .content .taglist
     list-style: none
@@ -52,22 +102,18 @@ $black: #101820
         justify-content: center
         align-items: center
 
-.btn
+button, .button
         display: inline-block
         padding: 12px 16px 10px
         font-size: 18px
         font-size: 1rem
         line-height: 1.25
-        background-color: #fff
-        border-radius: .25rem
+        background-color: #FFFFFF
+        border-radius: 0
         text-decoration: none
         font-weight: 700
-        color: $msb-blue
+        color: $acciod-blue
         text-align: center
-        -webkit-box-shadow: inset 0 0 0 2px $msb-blue
-        box-shadow: inset 0 0 0 2px $msb-blue
-        -webkit-transition: all .15s ease
-        transition: all .15s ease
 
 .margin-top-0
     margin-top: 0 !important
@@ -86,17 +132,60 @@ $black: #101820
     fill: currentColor
 .navbar-brand .navbar-item.logo
     padding: 0 1rem
-footer.footer
-    padding: 3rem 0rem 0rem
-    background-color: transparent
+
+
+
+.footer
+    padding: 0
+
+.footer .columns
+    margin: 0
+
+.footer .content:nth-child(1)
+    background-color: #F2F2F2
+    padding-top: 1.5em
+    padding-bottom: 1em
+    margin: 0
+
+.footer .content:nth-child(1) img
+    height: 35px
+
+.footer .content:nth-child(2)
+    background-color: #FFFFFF
+    margin: 0
+
+.footer .content:nth-child(3)
+    background-color: #333333
+    color: #FFFFFF
+
+.footer .content:nth-child(3) img
+    height: 20px
+
+.footer .content:nth-child(3) .navbar-item
+    text-transform: capitalize
+
+
+.footer .menu
+    margin: 1.5em 0
+
+.footer .menu-label
+    text-transform: none
+    color: #000000
+
+.footer .menu-list
+    margin: 0
+
+.footer .menu-list .navbar-item
+    padding: 0
+    font-size: 0.9em
 
 //Menu overrides
 $menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
+$menu-item-hover-color: $acciod-blue !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $msb-blue-invert
-$menu-item-active-background-color:	$msb-blue-invert
-$menu-list-border-left: 1px solid $msb-blue-invert
+$menu-item-active-color: $acciod-blue-invert
+$menu-item-active-background-color:	$acciod-blue-invert
+$menu-list-border-left: 1px solid $acciod-blue-invert
 $menu-label-color: $white-ter
 
 
@@ -129,21 +218,184 @@ $menu-label-color: $white-ter
     margin: 0 1.5em 0 0
 
 
-@import "~bulma"
-
-
-// responsiveness
-+tablet-only
-    .blog-list-item .featured-thumbnail
-        flex-basis: 50%
-
-+mobile
-    .blog-list-item header
-        display: block
-    .blog-list-item .featured-thumbnail
-        text-align: center
-        max-width: 70%
-        margin: 0 0 1em
 
 .copyright
     padding: 2em
+
+
+.button.is-primary
+    background-color: $primary
+    border-color: transparent
+    color: $white
+
+.button.is-primary.is-outlined
+    background-color: $white
+    border-color: $primary
+    color: $primary !important
+
+
+
+.has-text-justified
+    text-align: justify
+
+.has-text-primary
+    color: $primary !important
+
+
+
+
+.indexSlider1
+    background-image: url('/img/181106_104900.png')
+    background-size: cover
+    background-position: bottom
+
+.indexSlider1 .button
+    border: 0
+    font-weight: normal
+    padding: 1em 2em
+
+.indexParagraph1 h3
+    margin-bottom: 3em
+
+.indexParagraph2
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/espace.jpg')
+    background-size: cover
+    background-position: center
+
+.indexParagraph2 .box
+    border-radius: 0 !important
+    padding: 2em 0em
+    margin: 2em 0
+
+.indexParagraph2 img
+    max-width: 150px
+
+.indexSlider1 .container
+    width: 50%
+
+div.indexParagraph3
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/181014_213925.jpg')
+    background-size: cover
+    background-position: center
+
+.indexParagraph3 .button
+    font-weight: normal
+    padding: 1em 2em
+    margin: 2em 0
+
+.indexBlurb1 strong
+    color: red !important
+    font-weight: normal
+
+.indexBlurb1 .box
+    border-radius: 0 !important
+    box-shadow: none
+    -webkit-box-shadow: none
+
+.indexBlurb1 .column:last-child > .box
+    border: 1px solid #DDDDDD
+
+.indexBlurb1 img
+    width: 75px
+
+.indexBlurb1 hr
+    width: 6%
+    margin-left: 47%
+    background-color: black
+    height: 1px
+
+.indexParagraph4
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/171221_112021.jpg')
+    background-size: cover
+    background-position: center
+
+.indexParagraph4 .box
+    border-radius: 0 !important
+    padding: 2em 1em
+    margin: 2em 0
+
+.indexParagraph4 h3
+    font-size: 2.5em !important
+    font-weight: bold
+
+.indexBlurb2 h1
+    font-size: 1.5em
+    font-weight: bold
+    margin: 1.5em 0
+    padding: 0 6em
+
+.indexBlurb2 h2
+    font-size: 1.5em
+    margin: 1.5em 0
+    padding: 0 4em
+
+.indexBlurb2 h3, .indexBlurb2 h4
+    color: $primary
+
+.indexBlurb2 .box
+    border-radius: 0 !important
+    box-shadow: none
+    -webkit-box-shadow: none
+    border: 1px solid #DDDDDD
+
+.indexParagraph6
+    background-color: #000000
+
+.indexParagraph6 .button:hover
+    color: #000000 !important
+    background-color: $primary !important
+
+.indexParagraph8
+    background-color: $primary
+
+.indexParagraph9
+    background-color: #000000
+    color: #FFFFFF
+
+.indexParagraph9 .button:hover
+    color: #000000 !important
+    background-color: $primary !important
+
+.indexVideo1 .video-container
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden
+
+.indexVideo1 iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.indexBlurb3
+    background-color: #EBEBEB
+
+.indexBlurb3 .box
+    border-radius: 0 !important
+    box-shadow: none
+    -webkit-box-shadow: none
+
+.indexBlurb3 h4
+    font-size: 1.25em
+    font-weight: 400
+
+.indexBlurb3 hr
+    width: 80%
+    margin-left: 10%
+    background-color: black
+    height: 1px    
+
+.indexParagraph11
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/171221_105511.jpg')
+    background-size: cover
+    background-position: center
+    color: $white
+
+.indexParagraph11 h3
+    font-size: 1.1em
+    margin-bottom: 1em
+
+.indexParagraph11 p
+    font-size: 0.9em
