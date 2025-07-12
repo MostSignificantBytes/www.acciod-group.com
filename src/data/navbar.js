@@ -9,7 +9,7 @@ module.exports = [
                 { href: '/en/solution/tco/', title: 'Total Cost of Ownership (TCO)' },
                 { href: '/en/solution/how-kp-one-helps-you/', title: 'How KP-One helps you' },
             ] },
-            { href: '/en/product/', title: 'Product', subNav: [
+            { href: '/en/product/', title: 'Product', subtitle: 'KP-One: Product details', subNav: [
                 { href: '/en/product/data-model/', title: 'An unprecedented data model' },
                 { href: '/en/product/standard-repository/', title: 'A standard repository' },
                 { href: '/en/product/why-kp-one/', title: 'Why choose KP-One?' },
@@ -35,7 +35,7 @@ module.exports = [
                 { href: '/solution/tco/', title: 'Le coût de détention ou TCO' },
                 { href: '/solution/how-kp-one-helps-you/', title: 'Comment KP-One vous aide' },
             ] },
-            { href: '/product/', title: 'Produit', subNav: [
+            { href: '/product/', title: 'Produit', subtitle: 'KP-One : le Produit en détail', subNav: [
                 { href: '/product/data-model/', title: 'Un modèle de données unique' },
                 { href: '/product/standard-repository/', title: 'Un référentiel standard' },
                 { href: '/product/why-kp-one/', title: 'Pourquoi choisir KP-One ?' },

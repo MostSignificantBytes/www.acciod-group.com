@@ -1,107 +1,184 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import parse from 'html-react-parser';
+
+import staticData from '../data/navbar'
+
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Skills from "../components/Skills";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import FullWidthImage from "../components/FullWidthImage";
+import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const ProductPageTemplate = ({
     language,
     slug,
-    image,
     title,
-    description,
-    intro,
-    main,
-    testimonials,
-    fullImage,
-    skills,
+    subtitle1,
+    subtitle2,
+    quote,
+    why,
+    content,
+    contentComponent,
 }) => {
-    const heroImage = getImage(image) || image;
-    const fullWidthImage = getImage(fullImage) || fullImage;
 
-    return (
-        <div className="content">
-            <FullWidthImage img={heroImage} title={title} imgPosition = "bottom left"/>
-            <section className="section section--gradient">
-                <div className="container">
-                    <div className="section">
-                        <div className="columns">
-                            <div className="column is-7 is-offset-1">
-                                <h3 className="has-text-weight-semibold is-size-2">
-                                    {intro.heading}
-                                </h3>
-                                <p>{intro.description}</p>
+	const PageContent = contentComponent || Content;
+    const FilteredData = staticData.filter(data => data.language === language)[0];
+
+	return (
+        <div>
+
+            <div className="hero productPageHeader">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-10">
+                                <h2>
+                                    {FilteredData.nav[2].title} > {title}
+                                </h2>
                             </div>
                         </div>
-                        <div className="columns">
-                            <div className="column is-10 is-offset-1">
-                                <Features gridItems={intro.blurbs} /> 
+                    </div>
+                </div>
+            </div>
+
+            <div className="hero">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered productPageTitle">
+                            <div className="column is-10">
+                                <h2>
+                                    {title}
+                                </h2>
+                                <h3>
+                                    {subtitle1}
+                                </h3>
+                                <h3>
+                                    {subtitle2}
+                                </h3>
+                            </div>
+                        </div>
+                        <div className="columns is-centered productPageContent">
+                            <div className="column is-10">
                                 <div className="columns">
                                     <div className="column is-7">
-                                        <h3 className="has-text-weight-semibold is-size-3">
-                                            {main.heading}
-                                        </h3>
-                                        <p>{main.description}</p>
+                                        <PageContent className="content" content={content} />
                                     </div>
-                                </div>
-                                <div className="tile is-ancestor">
-                                    <div className="tile is-vertical">
-                                        <div className="tile">
-                                            <div className="tile is-parent is-vertical">
-                                                <article className="tile is-child">
-                                                    <PreviewCompatibleImage imageInfo={main.image1} />
-                                                </article>
-                                            </div>
-                                            <div className="tile is-parent">
-                                                <article className="tile is-child">
-                                                    <PreviewCompatibleImage imageInfo={main.image2} />
-                                                </article>
-                                            </div>
-                                        </div>
-                                        <div className="tile is-parent">
-                                            <article className="tile is-child">
-                                                <PreviewCompatibleImage imageInfo={main.image3} />
-                                            </article>
+                                    <div className="column is-4">
+                                        <div className="box">
+                                            <h4>{FilteredData.nav[2].subtitle}</h4>
+                                            <hr/>
+                                            {FilteredData.nav[2].subNav.map(item => (
+                                                (item.title !== title) ? 
+                                                (
+                                                <div>
+                                                    <Link key={item.title} to={item.href}>
+                                                        {item.title}
+                                                    </Link>
+                                                </div>
+                                                ) : null
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
-                                <Testimonials testimonials={testimonials} />
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
-            <section className="section section--gradient">
-                <div className="container">
-                    <div className="section">
-                        <div className="columns">
-                            <div className="column is-10 is-offset-1">
-                                <h2 className="has-text-weight-semibold is-size-2">
-                                    {skills.heading}
-                                </h2>
-                                <div className="tile is-ancestor">
-                                    <div className="tile is-vertical">
-                                        <div className="tile is-parent">
-                                            <article className="tile is-child">
-                                                <PreviewCompatibleImage imageInfo={skills.image} />
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="is-size-5">{skills.description}</p>
-                                <Skills data={skills.list} />
+            </div>
+
+            {(!!quote) ? (
+            <div className="hero productPageQuote">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-6">
+                                <p>{quote}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            ) : null}
+
+            {(!!why) ? (
+            <div>
+
+            <div className="hero productPageWhyParagraph1">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-6">
+                                <div className="box">
+                                    <h3>{why.paragraph1title1}</h3>
+                                    <p>{why.paragraph1text1}</p>
+                                    <h3>{why.paragraph1title2}</h3>
+                                    <p>{why.paragraph1text2}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="hero productPageWhyParagraph2">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-6">
+                                <div>
+                                    <h3>{why.paragraph2title}</h3>
+                                    <div>
+                                        <img src="/img/icons8-innovation-128.png" alt={why.paragraph2title} className="image is-inline-block"/>
+                                    </div>
+                                    <h4>{why.paragraph2text}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="columns is-centered">
+                            <div className="column is-10">
+                                <div className="columns">
+                                    <div className="column is-4">
+                                        <h3>{why.paragraph2element1title}</h3>
+                                        <p>{why.paragraph2element1text}</p>
+                                    </div>
+                                    <div className="column is-4">
+                                        <h3>{why.paragraph2element2title}</h3>
+                                        <p>{why.paragraph2element2text}</p>
+                                    </div>
+                                    <div className="column is-4">
+                                        <h3>{why.paragraph2element3title}</h3>
+                                        <p>{why.paragraph2element3text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="hero productPageWhyParagraph3">
+                <div classname="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-10">
+                                <div className="columns">
+                                    <div className="column is-6">
+                                        <img src="/img/181023_163754.png" alt="{why.paragraph3text}"/>
+                                    </div>
+                                    <div className="column is-6 is-vcenter">
+                                        <p>{why.paragraph3text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            ) : null}
+
         </div>
     );
 };
@@ -109,45 +186,30 @@ export const ProductPageTemplate = ({
 ProductPageTemplate.propTypes = {
     language: PropTypes.string,
     slug: PropTypes.string,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
-    description: PropTypes.string,
-    intro: PropTypes.shape({
-        blurbs: PropTypes.array,
-    }),
-    main: PropTypes.shape({
-        heading: PropTypes.string,
-        description: PropTypes.string,
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    testimonials: PropTypes.array,
-    fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    skills: PropTypes.shape({
-        heading: PropTypes.string,
-        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        description: PropTypes.string,
-        list: PropTypes.array,
-    }),
+    subtitle1: PropTypes.string,
+    subtitle2: PropTypes.string,
+    quote: PropTypes.string,
+    why: PropTypes.object,
+    content: PropTypes.node.isRequired,
+    contentComponent: PropTypes.func,
 };
 
 const ProductPage = ({ data }) => {
-    const { frontmatter } = data.markdownRemark;
+    const { markdownRemark: page } = data;
 
     return (
         <Layout>
             <ProductPageTemplate
-                language={frontmatter.language}
-                slug={frontmatter.slug}
-                image={frontmatter.image}
-                title={frontmatter.title}
-                description={frontmatter.description}
-                intro={frontmatter.intro}
-                main={frontmatter.main}
-                testimonials={frontmatter.testimonials}
-                fullImage={frontmatter.full_image}
-                skills={frontmatter.skills}
+                language={page.frontmatter.language}
+                slug={page.frontmatter.slug}
+                title={page.frontmatter.title}
+                subtitle1={page.frontmatter.subtitle1}
+                subtitle2={page.frontmatter.subtitle2}
+                quote={page.frontmatter.quote}
+                why={page.frontmatter.why}
+                content={page.html}
+                contentComponent={HTMLContent}
             />
         </Layout>
     );
@@ -164,91 +226,33 @@ ProductPage.propTypes = {
 
 export default ProductPage;
 
-export const productPageQuery = graphql`
-    query ProductPage($id: String!, $language: String!) {
-        markdownRemark(
-            id: { eq: $id }
-            frontmatter: {
-                language: { eq: $language}
-            }
-        ) {
+export const pageQuery = graphql`
+    query ProductByID($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            id
+            html
             frontmatter {
+                title
+                subtitle1
+                subtitle2
+                quote
+                why {
+                    paragraph1title1
+                    paragraph1text1
+                    paragraph1title2
+                    paragraph1text2
+                    paragraph2title
+                    paragraph2text
+                    paragraph2element1title
+                    paragraph2element1text
+                    paragraph2element2title
+                    paragraph2element2text
+                    paragraph2element3title
+                    paragraph2element3text
+                    paragraph3text
+                }
                 language
                 slug
-                title
-                image {
-                    childImageSharp {
-                        gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-                    }
-                }
-                description
-                intro {
-                    blurbs {
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-                            }
-                        }
-                        text
-                    }
-                    heading
-                    description
-                }
-                main {
-                    heading
-                    description
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-                            }
-                        }
-                    }
-                    image2 {
-                        alt
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-                            }
-                        }
-                    }
-                    image3 {
-                        alt
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
-                            }
-                        }
-                    }
-                }
-                testimonials {
-                    author
-                    quote
-                }
-
-                full_image {
-                    childImageSharp {
-                        gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-                    }
-                }
-                skills {
-                    heading
-                    image {
-                        alt
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-                            }
-                        }
-                    }
-                    description
-                    list {
-                        description
-                        items
-                        name
-                    }
-                }
             }
         }
     }

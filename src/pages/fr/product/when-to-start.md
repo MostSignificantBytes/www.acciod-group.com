@@ -1,8 +1,11 @@
 ---
-templateKey: about-page
+templateKey: product-page
 language: fr
 slug: +product+when-to-start
 title: Quand démarrer avec KP-One ?
+subtitle1: 
+subtitle2: 
+quote: 
 ---
 KP-One a été adopté par des entreprises ETI et CAC40 à la faveur d’éléments déclencheurs tels que :
 
@@ -24,12 +27,4 @@ KP-One a été adopté par des entreprises ETI et CAC40 à la faveur d’éléme
 - Anticipant sur les coûts à éviter lors des projets de consolidation
 - Partageant les mêmes dénominateurs budgétaires et leur contenu en mode collaboratif sur un même modèle et référentiel de données (SaaS)
 
-Contact us
-
-### KP-One : le Produit en détail
-
-Un référentiel standard
-Pourquoi choisir KP-One ?
-Vos gains de productivité et de valeur
-Fonctionnalités de KP-One
-Quand démarrer avec KP-One ?
+[Contact us](/contact)

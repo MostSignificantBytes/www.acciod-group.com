@@ -1,12 +1,12 @@
 ---
-templateKey: about-page
+templateKey: product-page
 language: fr
 slug: +product+features
 title: Fonctionnalités de KP-One
+subtitle1: Quel que soit le périmètre budgétaire que vous analysez,
+subtitle2: KP-One vous restitue une vision Compte de Résultat et Liquidités
+quote: 
 ---
-### Quel que soit le périmètre budgétaire que vous analysez,
-### **KP-One vous restitue une vision Compte de Résultat et Liquidités**
-
 Les fonctionnalités complètes et intégrées de KP-One vous permettent de :
  
 - Automatiser vos processus budgétaires et de planifier vos dépenses (IT planning)
@@ -17,11 +17,3 @@ Les fonctionnalités complètes et intégrées de KP-One vous permettent de :
 - Construire vos catalogues de services et refacturer vos coûts au vrai taux d’usage
 - Disposer d’indicateurs de performance (KPI)
 - Obtenir des Benchmark par industrie
-
-### KP-One: Product details
-
-A standard repository
-Why choose KP-One?
-Productivity and value benefits
-KP-One features
-When to start with KP-One?

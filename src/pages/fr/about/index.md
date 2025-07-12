@@ -13,6 +13,6 @@ L’objectif de ce programme :  inventer un outil intégré et automatisé, s’
 ACCIOD a ainsi créé KP-One, première solution logicielle permettant sur un modèle de donnée unique la connexion des coûts technologiques à la valeur des services produits afin d’en mesurer l’impact sur les métiers de l’Entreprise, se positionnant ainsi sur le nouveau marché du Technology Business Management. 
 KP-One a été adoptée dès sa mise sur le marché par le Champion du Digital du CAC 40 et intègre aujourd’hui des périmètres budgétaires complexes dans des organisations internationales.
 
-KP-One est sélectionnée dans le Top 5 des solutions couvrant l’ensemble du spectre fonctionnel IT Financial et Business Management reconnues par Gartner dans son Market Guide.
+> KP-One est sélectionnée dans le Top 5 des solutions couvrant l’ensemble du spectre fonctionnel IT Financial et Business Management reconnues par Gartner dans son Market Guide.
 
 Notre équipe d’analystes vous assiste dans l’adoption de KP-One sur vos périmètres critiques.

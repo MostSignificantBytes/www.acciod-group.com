@@ -1,8 +1,11 @@
 ---
-templateKey: about-page
+templateKey: product-page
 language: en
 slug: +product+when-to-start
 title: When to start with KP-One?
+subtitle1: 
+subtitle2: 
+quote: 
 ---
 KP- One adoption by SMB and fortune 500 companies was triggered by following context change:
 
@@ -24,12 +27,4 @@ In addition, in order to benefit from IT financial management process improvemen
 - Anticipating on consolidation project cost avoidance
 - Sharing same budget perimeter and content I a collaborative mode with the same data repository (SaaS)
 
-Contact us
-
-### KP-One: Product details
-
-A standard repository
-Why choose KP-One?
-Productivity and value benefits
-KP-One features
-When to start with KP-One?
+[Contact us](/en/contact)
