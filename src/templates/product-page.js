@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-import parse from 'html-react-parser';
 
 import staticData from '../data/navbar'
 

@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: solution-page
 language: en
 slug: +solution+how-kp-one-helps-you
 title: How KP-One helps you

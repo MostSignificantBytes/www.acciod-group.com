@@ -13,6 +13,6 @@ R&D program objective: invent an integrated and automated tool that perfectly fi
 ACCIOD created KP-One, first software solution based on an unprecedented data model allowing to connect technology cost to delivered services value in order to measure their impact on enterprise business. Doing so, KP-One positions on the emerging Technology Business Management market.
 KP-One was adopted as soon as released by French CAC40 digital champion and manages today complex IT budgets in global organizations.
 
-> KP-One ranks in Gartner « IT Financial & Business Management » ITFM-ITBM Market Guide Top 5 comprehensive solutions.
+`KP-One ranks in Gartner « IT Financial & Business Management » ITFM-ITBM Market Guide Top 5 comprehensive solutions.`
 
 Our analyst team assist you with implementing KP-One on your critical perimeters.

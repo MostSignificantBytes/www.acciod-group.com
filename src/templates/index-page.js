@@ -299,7 +299,7 @@ export const IndexPageTemplate = ({
                 </div>
             </div>
 
-            <section className="hero indexParagraph6">
+            <div className="hero indexParagraph6">
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns is-centered">
@@ -311,7 +311,7 @@ export const IndexPageTemplate = ({
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <div className="hero">
                 <div className="hero-body">

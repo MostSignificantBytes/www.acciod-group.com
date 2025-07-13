@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: solution-page
 language: en
 slug: +solution+tco
 title: Total Cost of Ownership (TCO)

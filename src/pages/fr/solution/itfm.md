@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: solution-page
 language: fr
 slug: +solution+itfm
 title: La gouvernance financière de l'informatique

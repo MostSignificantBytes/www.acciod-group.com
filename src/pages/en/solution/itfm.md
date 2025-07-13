@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: solution-page
 language: en
 slug: +solution+itfm
 title: IT financial governance

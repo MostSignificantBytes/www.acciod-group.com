@@ -27,6 +27,39 @@ $family-primary: "Titillium Web", sans-serif
 // Acciod small navbar
 $navbar-height: 5.5
 
+.navbar-fixed > .container
+    display: flex !important
+
+.navbar-fixed .navbar-end
+    display: flex !important
+    justify-content: flex-end !important
+    margin-inline-start: auto !important
+
+.navbar-fixed .navbar-item
+    display: flex
+
+.navbar-fixed .navbar-end .navbar-item
+    padding: 0
+    margin: 14px 10px 0 0
+
+.navbar-fixed .navbar-end .navbar-item.linkedin
+    padding: 0
+    margin: 12px 10px 0 0
+
+@media (min-width:1024px)
+
+    .navbar-fixed .navbar-end .navbar-item
+        padding: 0
+        margin: 10px 10px 0 0
+
+    .navbar-fixed .navbar-end .navbar-item.linkedin
+        padding: 0
+        margin: 9px 10px 0 0
+
+    .navbar-fixed .navbar-end .navbar-item.languageSwitcher
+        padding: 0
+        margin: 4px 10px 0 0
+
 .navbar-item.is-active
     background-color: $white !important
     font-weight: normal !important
@@ -45,15 +78,21 @@ $navbar-height: 5.5
     margin: 1.5rem
     font-weight: normal
 
-.navbar .button:hoover
+.navbar .button:hover
     background-color: $primary
     color: $white
     border-radius: 0
     border-color: $primary
     margin: 1.5rem
 
+.navbar .navbar-burger
+    margin-left: 0.5em
 
+.navbar .navbar-burger span
+    border: 1px solid $black
 
+.navbar .navbar-burger.is-active span:nth-child(4)
+    display: none
 
 
 .navbar:first-child .navbar-item
@@ -148,22 +187,42 @@ button, .button
     margin: 0
 
 .footer .content:nth-child(1) img
-    height: 35px
+    display: block
+    width: 124px
+
+@media (max-width:1024px)
+    .footer .content:nth-child(1) img
+        margin: auto
+
+    .footer .content:nth-child(1) .button
+        width: 60%
+        margin-left: 20%
 
 .footer .content:nth-child(2)
     background-color: #FFFFFF
     margin: 0
+
+@media (max-width:1024px)
+    .footer .content:nth-child(2) .has-text-left, .footer .content:nth-child(2) a
+        text-align: center !important
 
 .footer .content:nth-child(3)
     background-color: #333333
     color: #FFFFFF
 
 .footer .content:nth-child(3) img
-    height: 20px
+    display: block
+    width: 139px
 
 .footer .content:nth-child(3) .navbar-item
     text-transform: capitalize
 
+@media (max-width:1024px)
+    .footer .content:nth-child(3) img
+        margin: auto
+
+    .footer .content:nth-child(3) a, .footer .content:nth-child(3) p
+        text-align: center !important
 
 .footer .menu
     margin: 1.5em 0
@@ -338,8 +397,27 @@ div.indexParagraph3
     -webkit-box-shadow: none
     border: 1px solid #DDDDDD
 
+@media (max-width:1024px)
+    
+    .indexBlurb2 h1, .indexBlurb2 h2
+        padding: 0
+
+    .indexBlurb2 p, .indexBlurb2 h3
+        padding: 0 18px
+
+    .indexBlurb2 .box
+        padding: 10px
+        margin: 10px
+
+    .indexBlurb2 img
+        padding: 1em
+
 .indexParagraph6
     background-color: #000000
+
+.indexParagraph6 .button
+    height: 100%
+    white-space: normal
 
 .indexParagraph6 .button:hover
     color: #000000 !important
@@ -348,6 +426,12 @@ div.indexParagraph3
 .indexParagraph8
     background-color: $primary
 
+@media (max-width:1024px)
+
+    .indexParagraph8
+        text-align: center
+        padding: 0 10px
+
 .indexParagraph9
     background-color: #000000
     color: #FFFFFF
@@ -355,6 +439,9 @@ div.indexParagraph3
 .indexParagraph9 .button:hover
     color: #000000 !important
     background-color: $primary !important
+
+.indexVideo1 .hero-body
+    padding: 0
 
 .indexVideo1 .video-container
     position: relative
@@ -412,6 +499,11 @@ div.indexParagraph3
 
 .productPageHeader h2
     font-size: 0.9em
+
+@media (max-width:1024px)
+    
+    .productPageHeader h2
+        padding-left: 1em
 
 .productPageTitle h2
     font-size: 1.25em
@@ -536,6 +628,21 @@ div.indexParagraph3
     margin: 3em 0
     color: $white
     font-size: 1.2em
+    padding: 1em
+
+@media (max-width:1024px)
+    
+    .productPageWhyParagraph3 img
+        margin-top: 2em
+        margin-bottom: 0
+
+    .productPageWhyParagraph3 .is-vcenter
+        padding: 0
+
+    .productPageWhyParagraph3 p
+        text-align: center
+        padding: 0 1em
+        margin: 0 0 2em 0
 
 .aboutPageContent
     text-align: justify

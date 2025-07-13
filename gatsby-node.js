@@ -19,7 +19,6 @@ exports.createPages = ({ actions, graphql }) => {
                         frontmatter {
                             slug
                             language
-                            tags
                             templateKey
                         }
                     }

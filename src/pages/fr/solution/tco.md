@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: solution-page
 language: fr
 slug: +solution+tco
 title: Le coût de détention ou TCO

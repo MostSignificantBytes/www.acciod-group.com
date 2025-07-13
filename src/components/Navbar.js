@@ -48,7 +48,7 @@ const Navbar = class extends React.Component {
         return (
             <>
             <nav
-                className="navbar has-background-black"
+                className="navbar navbar-fixed has-background-black"
                 role="navigation"
                 aria-label="secondary-navigation"
             >
@@ -59,21 +59,21 @@ const Navbar = class extends React.Component {
                         </Link>
                     </div>
                     <div className="navbar-end has-text-centered">
-                        <div className="navbar-item" style={{ padding: "0.3rem 0.2rem 0rem"}}>
+                        <div className="navbar-item">
                             <a title="twitter" href="https://twitter.com/ACCIOD_">
                                 <img
                                     src={twitter}
                                     alt="Twitter"
-                                    style={{ width: "1.5em", height: "1.5em" }}
+                                    style={{ width: "24px", height: "24px" }}
                                 />
                             </a>
                         </div>
-                        <div className="navbar-item" style={{ padding: "0.3rem 0.2rem 0rem"}}>
+                        <div className="navbar-item linkedin">
                             <a title="linkedin" href="https://www.linkedin.com/company/1793406?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1433769600112%2Ctas%3Aacciod">
                                 <img
                                     src={linkedin}
                                     alt="Linkedin"
-                                    style={{ width: "1.75em", height: "1.75em" }}
+                                    style={{ width: "28px", height: "28px" }}
                                 />
                             </a>
                         </div>
@@ -88,9 +88,6 @@ const Navbar = class extends React.Component {
             >
                 <div className="container">
                     <div className="navbar-brand">
-                        <Link to={this.filteredData.path} className="navbar-item" title={this.filteredData.logoKpOne}>
-                            <img width="776px" height="280px" src={logoKpOne} alt={this.filteredData.logoKpOne} style={{ width: "auto" }} />
-                        </Link>
                         {/* Hamburger menu */}
                         <div
                             id="burger-menu"
@@ -101,10 +98,14 @@ const Navbar = class extends React.Component {
                             onKeyPress={() => this.toggleHamburger()}
                             onClick={() => this.toggleHamburger()}
                         >
-                            <span />
-                            <span />
-                            <span />
+                            <span/>
+                            <span/>
+                            <span/>
+                            <span/>
                         </div>
+                        <Link to={this.filteredData.path} className="navbar-item" title={this.filteredData.logoKpOne}>
+                            <img width="776px" height="280px" src={logoKpOne} alt={this.filteredData.logoKpOne} style={{ width: "auto" }} />
+                        </Link>
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                         <div className="navbar-end has-text-centered">

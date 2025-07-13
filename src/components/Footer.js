@@ -18,11 +18,11 @@ const Footer = class extends React.Component {
                 <div className="content">
                     <div className="container">
                         <div className="columns is-centered">
-                            <div className="column is-3">
+                            <div className="column is-3 is-centered">
                                 <img src={logoKpOneFooter} alt={this.filteredData.logoKpOne} />
                             </div>
                             <div className="column is-3"></div>
-                            <div className="column is-3">
+                            <div className="column is-3 is-centered">
                                 <Link className="button is-primary is-outlined mb-4" to={this.filteredData.nav[4].href}>
                                     {this.filteredData.nav[4].footerTitle}
                                 </Link>
