@@ -210,7 +210,7 @@ export const IndexPageTemplate = ({
                                     <p>{paragraph4.subtitle1}</p>
                                     <h3 className="mb-4">{paragraph4.subtitle2}</h3>
                                     <div className="mb-4">
-                                        <img src="/img/icons8-comptabilitA-64.png" alt={paragraph4.subtitle} className="image is-inline-block"/>
+                                        <img src="/img/icons8-comptabilitA-64.png" alt={paragraph4.subtitle1} className="image is-inline-block"/>
                                     </div>
                                     <p>{paragraph4.text}</p>
                                 </div>
