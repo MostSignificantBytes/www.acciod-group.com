@@ -1,34 +1,36 @@
 import React from "react";
 import Slider from "react-slick";
 
-export default function SimpleSlider() {
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
-    return (
-        <Slider {...settings}>
-            <div>
-                <h3>Slider page 1</h3>
-            </div>
-            <div>
-                <h3>Slider page 2</h3>
-            </div>
-            <div>
-                <h3>Slider page 3</h3>
-            </div>
-            <div>
-                <h3>Slider page 4</h3>
-            </div>
-            <div>
-                <h3>Slider page 5</h3>
-            </div>
-            <div>
-                <h3>Slider page 6</h3>
-            </div>
-        </Slider>
-    );
-}
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: true,
+};
+
+const SimpleSlider = class extends React.Component {
+    constructor(props) {
+        super(props);
+        this.slides = props.slides;
+        console.log(this.slides);
+    }
+
+    render() {
+        return (
+            <Slider {...settings} className="simple-slider">
+                {this.slides.map(slide => (
+                    <div>
+                        {(slide.image !== 'none') ? (<img src={"/img/" + slide.image} alt={slide.text}/>) : null}
+                        {(slide.title !== 'none') ? (<h3>{slide.title}</h3>) : null}
+                        <p>{slide.text}</p>
+                    </div>
+                ))}
+            </Slider>
+        );
+    }
+};
+
+export default SimpleSlider;

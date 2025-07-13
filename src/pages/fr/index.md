@@ -7,16 +7,22 @@ slider1:
   title: Connectez vos coûts technologiques à vos objectifs métiers
   elements:
     - image: none
+      title: none
       text: Key Performance One, grâce à son architecture inédite agrège et structure les données de bout en bout et en assure le cycle de vie
     - image: none
+      title: none
       text: Key Performance One s'adapte à l'organisation des Entreprises et des Administrations en identifiant qui sont les producteurs de services informatiques et qui en sont les consommateurs
     - image: none
+      title: none
       text: Key Performance One est la seule solution logicielle sur le Cloud (SaaS) qui permet aux organisations de partager les mêmes métriques budgétaires IT de détention et de valeur (TCO-TVO)
     - image: none
+      title: none
       text: Key Performance One est la première solution logicielle métier qui permet de rapprocher, planifier et connecter les dépenses et les investissements du numérique
     - image: none
+      title: none
       text: Key Performance One est référencée dans le Top 5 du Market Guide Gartner parmi les solutions « IT Financial & Business Management » ITFM-ITBM
     - image: none
+      title: none
       text: Key Performance One est la seule solution reposant sur un algorithme métier des Technologies de l'Information (IT) totalement intégré et s'appuyant sur un modèle de données unique
   button: Notre solution
 paragraph1:
@@ -28,28 +34,39 @@ paragraph2:
   text: KP-One vous permet de réduire durablement vos coûts digitaux à leur réel taux d’usage et d’aligner vos investissements technologiques sur les besoins stratégiques de vos métiers.
 slider2:
   elements:
-    - image: none
-      text: <strong>Gérez vos inducteurs de coûts technologiques</strong> sur un même prisme
-    - image: none
-      text: <strong>Obtenez le ROI</strong> de vos projets de transformation digitale
-    - image: none
-      text: <strong>Suivez automatiquement</strong> la productivité de vos projets et évitez les dérives
-    - image: none
-      text: <strong>Anticipez et évitez les coûts de l’obsolescence</strong> par la prédictibilité de vos budgets informatiques
-    - image: none
-      text: <strong>Maitrisez et évitez les dépenses croissantes</strong> liées à vos services Cloud par le TCO et le TVO
-    - image: none
-      text: <strong>Ecartez les coûts cachés et isolés</strong> avec le risque du « Shadow IT »
-    - image: none
-      text: <strong>Disposez de Benchmark et de KPI</strong> contextuels dans votre métier
-    - image: none
-      text: <strong>Construisez vos catalogues de service</strong> adaptés à vos métiers
-    - image: none
-      text: <strong>Simulez vos scénarios</strong> budgétaires
-    - image: none
-      text: <strong>Consolidez et rationalisez vos achats informatiques</strong> par fournisseur et type de services
-    - image: none
-      text: <strong>Obtenez automatiquement</strong> vos coûts de détention technologiques
+    - image: icons8-adjust-filled-50.png
+      title: Gérez vos inducteurs de coûts technologiques
+      text: sur un même prisme
+    - image: icons8-transaction-50.png
+      title: Obtenez le ROI
+      text: de vos projets de transformation digitale
+    - image: icons8-increase-50.png
+      title: Suivez automatiquement
+      text: la productivité de vos projets et évitez les dérives
+    - image: icons8-schedule-50.png
+      title: Anticipez et évitez les coûts de l’obsolescence
+      text: par la prédictibilité de vos budgets informatiques
+    - image: icons8-check-50.png
+      title: Maitrisez et évitez les dépenses croissantes
+      text: liées à vos services Cloud par le TCO et le TVO
+    - image: icons8-test-passed-50.png
+      title: Ecartez les coûts cachés et isolés
+      text: avec le risque du « Shadow IT »
+    - image: icons8-compare-50.png
+      title: Disposez de Benchmark et de KPI
+      text: contextuels dans votre métier
+    - image: icons8-product-documents-50.png
+      title: Construisez vos catalogues de service
+      text: adaptés à vos métiers
+    - image: icons8-visualization-skill-50.png
+      title: Simulez vos scénarios
+      text: budgétaires
+    - image: icons8-layers-50.png
+      title: Consolidez et rationalisez vos achats informatiques
+      text: par fournisseur et type de services
+    - image: icons8-easy-50.png
+      title: Obtenez automatiquement
+      text: vos coûts de détention technologiques
 paragraph3:
   button: Pourquoi KP-One
 blurb1:

@@ -7,16 +7,22 @@ slider1:
   title: Connect your technology cost to your business objectives
   elements:
     - image: none
+      title: none
       text: Key Performance One, thanks to its unprecedented architecture, ensures an end-to-end data aggregation and structuration as well as its lifecycle
     - image: none
+      title: none
       text: Key Performance One adapts to enterprise and government organizations by identifying IT services producers and consumers
     - image: none
+      title: none
       text: Key Performance One is the only SaaS solution allowing organizations to share the same IT financial metrics for Total Cost of Ownership and Total Value of Ownership (TCO-TVO)
     - image: none
+      title: none
       text: Key Performance One is the first software solution able to bring together, plan and connect digital expenses and investments
     - image: none
+      title: none
       text: Key Performance One ranks in Gartner « IT Financial & Business Management » ITFM-ITBM Market Guide Top 5 solutions
     - image: none
+      title: none
       text: Key Performance One is the only solution based on a fully integrated IT business algorithm relying on a unique data model
   button: Our solution
 paragraph1:
@@ -28,28 +34,39 @@ paragraph2:
   text: KP-One allows you to reduce, in a sustainable manner, your digital cost to its real usage ratio and to align your technology investments with business strategic needs.
 slider2:
   elements:
-    - image: none
-      text: <strong>Manage your technology cost drivers</strong> with a unified view
-    - image: none
-      text: <strong>Get project ROI</strong> for digital transformation
-    - image: none
-      text: <strong>Monitor continuously</strong> projects productivity and avoid drift
-    - image: none
-      text: <strong>Anticipate and avoid obsolescence cost</strong> with IT budget predictability
-    - image: none
-      text: <strong>Manage and avoid growing expense</strong> due to your Cloud services with TCO and TVO
-    - image: none
-      text: <strong>Avoid hidden and isolated costs</strong> that come along with shadow IT risk
-    - image: none
-      text: <strong>Benefit from benchmark and KPI</strong> aligned with your business context
-    - image: none
-      text: <strong>Build your own Service Catalogs</strong> dedicated to your business
-    - image: none
-      text: <strong>Simulate</strong> IT budget alternative scenarios
-    - image: none
-      text: <strong>Consolidate and streamline your IT purchase</strong> according to supplier and service type
-    - image: none
-      text: <strong>Get automatically</strong> your technology ownership cost
+    - image: icons8-adjust-filled-50.png
+      title: Manage your technology cost drivers
+      text: with a unified view
+    - image: icons8-transaction-50.png
+      title: Get project ROI
+      text: for digital transformation
+    - image: icons8-increase-50.png
+      title: Monitor continuously
+      text: projects productivity and avoid drift
+    - image: icons8-schedule-50.png
+      title: Anticipate and avoid obsolescence cost
+      text: with IT budget predictability
+    - image: icons8-check-50.png
+      title: Manage and avoid growing expense
+      text: due to your Cloud services with TCO and TVO
+    - image: icons8-test-passed-50.png
+      title: Avoid hidden and isolated costs
+      text: that come along with shadow IT risk
+    - image: icons8-compare-50.png
+      title: Benefit from benchmark and KPI
+      text: aligned with your business context
+    - image: icons8-product-documents-50.png
+      title: Build your own Service Catalogs
+      text: dedicated to your business
+    - image: icons8-visualization-skill-50.png
+      title: Simulate
+      text: IT budget alternative scenarios
+    - image: icons8-layers-50.png
+      title: Consolidate and streamline your IT purchase
+      text: according to supplier and service type
+    - image: icons8-easy-50.png
+      title: Get automatically
+      text: your technology ownership cost
 paragraph3:
   button: Why KP-One
 blurb1:

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+@import "~slick-carousel/slick/slick.css"
+@import "~slick-carousel/slick/slick-theme.css"
 
 // Config vars
 $acciod-blue: #079FE1
@@ -312,6 +312,17 @@ $menu-label-color: $white-ter
     border: 0
     font-weight: normal
     padding: 1em 2em
+    margin-top: 2em
+
+.slick-slider, .slick-list
+    background-color: red !important
+    font-size: 5em !important
+    height: 500px
+    width: 300px
+
+.indexSlider1 .simple-slider p
+    color: $white
+    font-size: 1.5em
 
 .indexParagraph1 h3
     margin-bottom: 3em
@@ -329,8 +340,21 @@ $menu-label-color: $white-ter
 .indexParagraph2 img
     max-width: 150px
 
-.indexSlider1 .container
-    width: 50%
+.indexSlider2 .simple-slider h3
+    font-size: 2em
+    font-weight: bold
+
+.indexSlider2 .simple-slider p
+    font-size: 1.5em
+
+.indexSlider2 .simple-slider img
+    display: block
+    width: 50px
+    margin: auto
+
+.indexSlider2 .simple-slider > button
+    filter: drop-shadow(0px 1000px 0 #B2B2B2)
+    transform: translateY(-1000px)
 
 div.indexParagraph3
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/181014_213925.jpg')

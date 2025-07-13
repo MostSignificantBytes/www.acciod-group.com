@@ -40,19 +40,11 @@ export const IndexPageTemplate = ({
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns is-centered">
-                            <div className="column is-10">
+                            <div className="column is-8">
                                 <div className="has-text-left">
                                     <h1 className="is-size-3 has-text-white mb-5">{slider1.title}</h1>
-                                    <div className="has-text-right mb-5">
-                                        <a href="#" className="mr-2 is-size-3 has-text-white">
-                                            <span>&lt;</span>
-                                        </a>
-                                        <a href="#" className="is-size-3 has-text-white">
-                                            <span>&gt;</span>
-                                        </a>
-                                    </div>
-                                    <p className="subtitle is-size-4 has-text-white mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit eaque totam aliquid veritatis assumenda temporibus harum unde! Voluptate consectetur quam expedita.</p>
-                                    <div className="has-text-left mb-5">
+                                    <SimpleSlider slides={slider1.elements}/>
+                                    <div className="has-text-left mb-5 mt-5">
                                         <Link className="button is-white is-large has-text-black" to={(language === 'fr' ? '' : '/' + language) + "/solution/itfm/"}>
                                             {slider1.button}
                                         </Link>
@@ -98,30 +90,12 @@ export const IndexPageTemplate = ({
                 </div>
             </div>
 
-            <div className="hero">
+            <div className="hero indexSlider2">
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns is-centered">
-                            <div className="column is-10">
-                                <div className="columns is-vcentered">
-                                    <div className="column is-narrow">
-                                        <a href="#" className="has-text-primary is-size-3">&lt;</a>
-                                    </div>
-                                    <div className="column has-text-centered">
-                                        <div className="mb-3">
-                                            <img src="https://placehold.co/120x80" alt="Slider 2 image" className="image is-inline-block"/>
-                                        </div>
-                                        <div className="mb-2">
-                                            <p className="title is-size-5 has-text-weight-bold mb-1">Slider 2 title</p>
-                                        </div>
-                                        <div>
-                                            <p className="has-text-grey">Slider 2 text</p>
-                                        </div>
-                                    </div>
-                                    <div className="column is-narrow">
-                                        <a href="#" className="has-text-primary is-size-3">&gt;</a>
-                                    </div>
-                                </div>
+                            <div className="column is-8 has-text-centered">
+                                <SimpleSlider slides={slider2.elements}/>
                             </div>
                         </div>
                     </div>
@@ -616,6 +590,7 @@ export const pageQuery = graphql`
                     title
                     elements {
                         image
+                        title
                         text
                     }
                     button
@@ -632,6 +607,7 @@ export const pageQuery = graphql`
                 slider2 {
                     elements {
                         image
+                        title
                         text
                     }
                 }
