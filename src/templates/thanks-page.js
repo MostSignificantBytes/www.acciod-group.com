@@ -7,14 +7,35 @@ import Layout from "../components/Layout";
 export const ThanksPageTemplate = ({ title, text }) => {
 
     return (
-        <section className="section">
-            <div className="container">
-                <div className="content">
-                    <h1>{title}</h1>
-                    <p>{text}</p>
+        <div>
+
+            <div className="hero contactPageHeader">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-10">
+                                <h2>
+                                    {title}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <div className="hero contactPage">
+                <div className="hero-body">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column is-7">
+                                <h3>{text}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     );
 };
 
