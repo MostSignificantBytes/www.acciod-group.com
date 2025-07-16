@@ -112,7 +112,9 @@ const Navbar = class extends React.Component {
                             {this.navData.map(item => (
                                 item.subNav && item.subNav.length > 0 ? (
                                     <div className="navbar-item has-dropdown is-hoverable">
-                                        <div className="navbar-item">{item.title}</div>
+                                        <Link className={`navbar-item${this.slug.startsWith(item.href) ? ' is-active' : ''}`} key={item.title} to={item.subNav[0].href}>
+                                            {item.title}
+                                        </Link>
                                         <div className="navbar-dropdown">
                                             {item.subNav.map(subItem => (
                                                 <Link className={`navbar-item${this.slug === subItem.href ? ' is-active' : ''}`} key={subItem.title} to={subItem.href}>

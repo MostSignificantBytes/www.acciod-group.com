@@ -368,20 +368,6 @@ export const IndexPageTemplate = ({
                 </div>
             </div>
 
-            <div className="hero indexVideo1">
-                <div className="hero-body">
-                    <div className="container">
-                        <div className="columns is-centered">
-                            <div className="column is-full">
-                                <div className="video-container">
-                                    <iframe src="https://www.youtube.com/embed/-bHnJuHhaeA" title="ACCIOD YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div className="hero indexBlurb3">
                 <div className="hero-body">
                     <div className="container">

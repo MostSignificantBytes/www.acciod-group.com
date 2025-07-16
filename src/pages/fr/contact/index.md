@@ -28,8 +28,8 @@ contact:
     city: 92200 Neuilly-sur-Seine
   uk:
     title: Adresse UK
-    street: 35 Ballards language
-    city: London N3 1XW
+    street: ACCIOD Group Limited
+    city: 5 Fleet Place, London, EC4M 7RD
   phone:
     title: Téléphone
     number: +33 (0)1 41 92 80 61

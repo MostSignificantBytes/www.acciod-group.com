@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import parse from 'html-react-parser';
 
 import staticData from '../data/navbar'
 
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const SolutionPageTemplate = ({
@@ -24,18 +24,6 @@ export const SolutionPageTemplate = ({
 }) => {
 
     const FilteredData = staticData.filter(data => data.language === language)[0];
-
-    const cleanHTMLString = string => string
-        .trim()
-        .replace(/\r?\n|\r/g, "") // removes multiple lines
-        .replace(/\s\s+/g, '') // removes extra white spaces
-
-    let parser = stringToParse => {
-        let dom = document.createElement('div');
-        let cleanedString = cleanHTMLString(stringToParse);
-        dom.innerHTML = cleanedString;
-        return dom.firstChild;
-    }
 
 	return (
         <div>
