@@ -34,7 +34,7 @@ export const SolutionPageTemplate = ({
                         <div className="columns is-centered">
                             <div className="column is-10">
                                 <h2>
-                                    {FilteredData.nav[2].title} > {title}
+                                    {FilteredData.nav[1].title} > {title}
                                 </h2>
                             </div>
                         </div>
