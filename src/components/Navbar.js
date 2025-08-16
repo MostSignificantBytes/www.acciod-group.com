@@ -112,21 +112,15 @@ const Navbar = class extends React.Component {
                             {this.navData.map(item => (
                                 item.subNav && item.subNav.length > 0 ? (
                                     <div className="navbar-item has-dropdown is-hoverable">
-                                        <Link className={`navbar-item${this.slug.startsWith(item.href) ? ' is-active' : ''}`} key={item.title} to={item.subNav[0].href}>
-                                            {item.title}
-                                        </Link>
+                                        <a className={`navbar-item${this.slug.startsWith(item.href) ? ' is-active' : ''}`} href={item.subNav[0].href}>{item.title}</a>
                                         <div className="navbar-dropdown">
                                             {item.subNav.map(subItem => (
-                                                <Link className={`navbar-item${this.slug === subItem.href ? ' is-active' : ''}`} key={subItem.title} to={subItem.href}>
-                                                    {subItem.title}
-                                                </Link>
+                                                <a className={`navbar-item${this.slug === subItem.href ? ' is-active' : ''}`} href={subItem.href}>{subItem.title}</a>
                                             ))}
                                         </div>
                                     </div>
                                 ) : (
-                                    <Link className={`navbar-item${this.slug === item.href ? ' is-active' : ''}${item.href.startsWith('tel') ? ' button' : ''}`} key={item.title} to={item.href}>
-                                        {item.title}
-                                    </Link>
+                                    <a className={`navbar-item${this.slug === item.href ? ' is-active' : ''}${item.href.startsWith('tel') ? ' button' : ''}`} href={item.href}>{item.title}</a>
                                 )
                             ))}
                         </div>
