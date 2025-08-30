@@ -1,5 +1,4 @@
 import React from "react";
-import ReCAPTCHA from "react-google-recaptcha-enterprise";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { navigate } from "gatsby-link";
@@ -22,10 +21,6 @@ export const ContactPageTemplate = ({
     handleChange,
 }) => {
     const [disableSubmitButton, setDisableSubmitButton] = React.useState(true);
-
-    function handleReCAPTCHA() {
-        setDisableSubmitButton(false);
-    }
 
     return (
         <div>
@@ -175,7 +170,7 @@ export const ContactPageTemplate = ({
                                             </label>
                                         </div>
                                     </div>
-                                    <ReCAPTCHA sitekey="6Lc7F7grAAAAAOX-8DQKTqvtl8Sa4zkGtZjt8p1H" onChange={handleReCAPTCHA}/>
+                                    <div data-netlify-recaptcha="true"></div>
                                     <div className="field">
                                         <button className="button is-link" type="submit" disabled={disableSubmitButton}>
                                             {send}
