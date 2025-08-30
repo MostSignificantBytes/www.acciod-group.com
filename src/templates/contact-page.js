@@ -56,6 +56,7 @@ export const ContactPageTemplate = ({
                                     action={(language === 'fr' ? '' : '/' + language) + "/contact/thanks/"}
                                     data-netlify="true"
                                     data-netlify-honeypot="bot-field"
+                                    data-netlify-recaptcha="true"
                                     onSubmit={handleSubmit}
                                 >
                                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -174,7 +175,7 @@ export const ContactPageTemplate = ({
                                             </label>
                                         </div>
                                     </div>
-                                    <ReCAPTCHA sitekey="6LcD8PgfAAAAANLnYT04Au6f29fzQjfxOBCYxVgC" onChange={handleReCAPTCHA}/>
+                                    <ReCAPTCHA sitekey="6Lc7F7grAAAAAOX-8DQKTqvtl8Sa4zkGtZjt8p1H" onChange={handleReCAPTCHA}/>
                                     <div className="field">
                                         <button className="button is-link" type="submit" disabled={disableSubmitButton}>
                                             {send}
