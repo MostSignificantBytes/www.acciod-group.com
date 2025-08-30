@@ -172,7 +172,7 @@ export const ContactPageTemplate = ({
                                     </div>
                                     <div data-netlify-recaptcha="true"></div>
                                     <div className="field">
-                                        <button className="button is-link" type="submit" disabled={disableSubmitButton}>
+                                        <button className="button is-link" type="submit">
                                             {send}
                                         </button>
                                     </div>
