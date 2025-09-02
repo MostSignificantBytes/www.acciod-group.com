@@ -7,9 +7,96 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 exports.createPages = ({ actions, graphql }) => {
     const { createPage, createRedirect } = actions
 
+    // Redirect of the former URLs to the new ones
+    // FR
     createRedirect({
         fromPath: `/qui-sommes-nous-.html`,
         toPath: `/about`,
+    })
+    createRedirect({
+        fromPath: `/mentions-legales.html`,
+        toPath: `/legal-notice`,
+    })
+    createRedirect({
+        fromPath: `/solution/itfm-itbm.html`,
+        toPath: `/solution/itfm`,
+    })
+    createRedirect({
+        fromPath: `/solution/total-cost-of-ownership-tco.html`,
+        toPath: `/solution/tco`,
+    })
+    createRedirect({
+        fromPath: `/solution/comment-kp-one-vous-aide.html`,
+        toPath: `/solution/how-kp-one-helps-you`,
+    })
+    createRedirect({
+        fromPath: `/produit/un-modele-de-donnees-unique.html`,
+        toPath: `/product/data-model`,
+    })
+    createRedirect({
+        fromPath: `/produit/un-referentiel-standard.html`,
+        toPath: `/product/standard-repository`,
+    })
+    createRedirect({
+        fromPath: `/produit/pourquoi-choisir-kp-one-.html`,
+        toPath: `/product/why-kp-one`,
+    })
+    createRedirect({
+        fromPath: `/produit/vos-gains-de-productivite-et-de-valeur.html`,
+        toPath: `/product/productivity-and-value-benefits`,
+    })
+    createRedirect({
+        fromPath: `/produit/fonctionnalites-de-kp-one.html`,
+        toPath: `/product/features`,
+    })
+    createRedirect({
+        fromPath: `/produit/quand-demarrer-avec-kp-one-.html`,
+        toPath: `/product/when-to-start`,
+    })
+    // EN
+    createRedirect({
+        fromPath: `/en/about-us.html`,
+        toPath: `/en/about`,
+    })
+    createRedirect({
+        fromPath: `/en/legal-notice.html`,
+        toPath: `/en/legal-notice`,
+    })
+    createRedirect({
+        fromPath: `/en/solution/itfm.html`,
+        toPath: `/en/solution/itfm`,
+    })
+    createRedirect({
+        fromPath: `/en/solution/total-cost-of-ownership-it.html`,
+        toPath: `/en/solution/tco`,
+    })
+    createRedirect({
+        fromPath: `/en/solution/how-kp-one-helps-you.html`,
+        toPath: `/en/solution/how-kp-one-helps-you`,
+    })
+    createRedirect({
+        fromPath: `/en/product/an-unprecedented-data-model.html`,
+        toPath: `/en/product/data-model`,
+    })
+    createRedirect({
+        fromPath: `/en/product/a-standard-repository.html`,
+        toPath: `/en/product/standard-repository`,
+    })
+    createRedirect({
+        fromPath: `/en/product/why-choose-kp-one-.html`,
+        toPath: `/en/product/why-kp-one`,
+    })
+    createRedirect({
+        fromPath: `/en/product/productivity-and-value-benefits.html`,
+        toPath: `/en/product/productivity-and-value-benefits`,
+    })
+    createRedirect({
+        fromPath: `/en/product/kp-one-features.html`,
+        toPath: `/en/product/features`,
+    })
+    createRedirect({
+        fromPath: `/en/product/when-to-start-with-kp-one-.html`,
+        toPath: `/en/product/when-to-start`,
     })
 
     return graphql(`
