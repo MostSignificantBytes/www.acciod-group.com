@@ -83,8 +83,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `MSB`,
-                short_name: `MSB`,
+                name: `ACCIOD Group`,
+                short_name: `ACCIOD Group`,
                 start_url: `/`,
                 background_color: `#ffffff`,
                 theme_color: `#003399`,
