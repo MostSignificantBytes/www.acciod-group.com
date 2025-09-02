@@ -75,8 +75,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-                host: 'https://www.msbytes.com',
-                sitemap: 'https://www.msbytes.com/sitemap.xml',
+                host: 'https://acciod-group.com/',
+                sitemap: 'https://acciod-group.com/sitemap.xml',
                 policy: [{userAgent: '*', allow: '/'}]
             },
         },
